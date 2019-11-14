@@ -1,63 +1,72 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="com.example.ketnoinguoithan"
+3    package="com.example.familyconnectionapp"
 4    android:versionCode="1"
 5    android:versionName="1.0" >
 6
 7    <uses-sdk
-8        android:minSdkVersion="23"
-8-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml
+8        android:minSdkVersion="15"
+8-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="29" />
-9-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml
+9-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:5:5-22:19
+11-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:5:5-25:19
 12        android:allowBackup="true"
-12-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:6:9-35
+12-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-13-->[androidx.core:core:1.0.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\72b2b92ec4ab73ff21fb9bc348de3b22\core-1.0.1\AndroidManifest.xml:22:18-86
+13-->[androidx.core:core:1.0.1] C:\Users\htc8s\.gradle\caches\transforms-2\files-2.1\c0a39027978b83a483a047f5c31d0c4e\core-1.0.1\AndroidManifest.xml:22:18-86
 14        android:debuggable="true"
 15        android:icon="@mipmap/ic_launcher"
-15-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:7:9-43
+15-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:7:9-43
 16        android:label="@string/app_name"
-16-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:8:9-41
+16-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:8:9-41
 17        android:roundIcon="@mipmap/ic_launcher_round"
-17-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:9:9-54
+17-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:9:9-54
 18        android:supportsRtl="true"
-18-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:10:9-35
-19        android:theme="@style/AppTheme" >
-19-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:11:9-40
-20        <activity
-20-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:12:9-15:68
-21            android:name="com.example.ketnoinguoithan.MapActivity"
-21-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:13:13-40
-22            android:label="@string/title_activity_map"
-22-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:14:13-55
-23            android:theme="@style/AppTheme.NoActionBar" />
-23-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:15:13-56
-24        <activity
-24-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:16:9-18:63
-25            android:name="com.example.ketnoinguoithan.ui.login.RegisterActivity"
-25-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:17:13-54
-26            android:label="@string/title_activity_register" />
-26-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:18:13-60
-27        <activity
-27-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:19:9-21:60
-28            android:name="com.example.ketnoinguoithan.ui.login.LoginActivity"
-28-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:20:13-51
-29            android:label="@string/title_activity_login" />
-29-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:21:13-57
+18-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:10:9-35
+19        android:testOnly="true"
+20        android:theme="@style/AppTheme" >
+20-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:11:9-40
+21        <activity
+21-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:12:9-15:68
+22            android:name="com.example.familyconnectionapp.MenuActivity"
+22-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:13:13-41
+23            android:label="@string/title_activity_menu"
+23-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:14:13-56
+24            android:theme="@style/AppTheme.NoActionBar" />
+24-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:15:13-56
+25        <activity android:name="com.example.familyconnectionapp.ActivitySignUp" />
+25-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:16:9-52
+25-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:16:19-49
+26        <activity android:name="com.example.familyconnectionapp.ActivityLogin" />
+26-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:17:9-51
+26-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:17:19-48
+27        <activity android:name="com.example.familyconnectionapp.MainActivity" >
+27-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:18:9-24:20
+27-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:18:19-47
+28            <intent-filter>
+28-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:19:13-23:29
+29                <action android:name="android.intent.action.MAIN" />
+29-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:20:17-69
+29-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:20:25-66
 30
-31        <provider
-31-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\bba9e662e9f4bf0da774229f97b853fc\lifecycle-process-2.0.0\AndroidManifest.xml:23:9-27:43
-32            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-32-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\bba9e662e9f4bf0da774229f97b853fc\lifecycle-process-2.0.0\AndroidManifest.xml:24:13-79
-33            android:authorities="com.example.ketnoinguoithan.lifecycle-process"
-33-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\bba9e662e9f4bf0da774229f97b853fc\lifecycle-process-2.0.0\AndroidManifest.xml:25:13-69
-34            android:exported="false"
-34-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\bba9e662e9f4bf0da774229f97b853fc\lifecycle-process-2.0.0\AndroidManifest.xml:26:13-37
-35            android:multiprocess="true" />
-35-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\bba9e662e9f4bf0da774229f97b853fc\lifecycle-process-2.0.0\AndroidManifest.xml:27:13-40
-36    </application>
-37
-38</manifest>
+31                <category android:name="android.intent.category.LAUNCHER" />
+31-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:22:17-77
+31-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:22:27-74
+32            </intent-filter>
+33        </activity>
+34
+35        <provider
+35-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\htc8s\.gradle\caches\transforms-2\files-2.1\b3c088406576b03c69a90621925ddf75\lifecycle-process-2.0.0\AndroidManifest.xml:23:9-27:43
+36            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+36-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\htc8s\.gradle\caches\transforms-2\files-2.1\b3c088406576b03c69a90621925ddf75\lifecycle-process-2.0.0\AndroidManifest.xml:24:13-79
+37            android:authorities="com.example.familyconnectionapp.lifecycle-process"
+37-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\htc8s\.gradle\caches\transforms-2\files-2.1\b3c088406576b03c69a90621925ddf75\lifecycle-process-2.0.0\AndroidManifest.xml:25:13-69
+38            android:exported="false"
+38-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\htc8s\.gradle\caches\transforms-2\files-2.1\b3c088406576b03c69a90621925ddf75\lifecycle-process-2.0.0\AndroidManifest.xml:26:13-37
+39            android:multiprocess="true" />
+39-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\htc8s\.gradle\caches\transforms-2\files-2.1\b3c088406576b03c69a90621925ddf75\lifecycle-process-2.0.0\AndroidManifest.xml:27:13-40
+40    </application>
+41
+42</manifest>
