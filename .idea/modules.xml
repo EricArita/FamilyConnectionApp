@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Relative-Connection-App.iml" filepath="$PROJECT_DIR$/Relative-Connection-App.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FamilyConnectionApp.iml" filepath="$PROJECT_DIR$/FamilyConnectionApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
 </project>

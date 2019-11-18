@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "153106259548",
+    "firebase_url": "https://family-connection-app.firebaseio.com",
+    "project_id": "family-connection-app",
+    "storage_bucket": "family-connection-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:153106259548:android:9d93ec1f748b629fcc9099",
+        "android_client_info": {
+          "package_name": "com.example.familyconnectionapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "153106259548-9uhc6p1ui0lunll7m8n3rd2cdqvmksrf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.familyconnectionapp",
+            "certificate_hash": "77e67db8e744d575085145789514c1ce1eb66f9f"
+          }
+        },
+        {
+          "client_id": "153106259548-dsts018aherhvul45vb7ecumjf9q2m1k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDF1OT-4JvJvwA1zgBQhfGqr9jL_lgZOwU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "153106259548-dsts018aherhvul45vb7ecumjf9q2m1k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
