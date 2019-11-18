@@ -1,10 +1,12 @@
 package com.example.familyconnectionapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
+import android.view.MenuItem;
 import android.view.View;
 
 import androidx.navigation.NavController;
@@ -20,6 +22,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
+import android.widget.Toast;
 
 public class MenuActivity extends AppCompatActivity {
 
@@ -39,7 +42,7 @@ public class MenuActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
-        DrawerLayout drawer = findViewById(R.id.drawer_layout);
+        final DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
@@ -51,6 +54,34 @@ public class MenuActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+        navigationView.setNavigationItemSelectedListener(
+                new NavigationView.OnNavigationItemSelectedListener() {
+                    @Override
+                    public boolean onNavigationItemSelected(MenuItem menuItem) {
+                        // set item as selected to persist highlight
+                        int i=menuItem.getItemId();
+
+                        Toast.makeText(MenuActivity.this, ""+i, Toast.LENGTH_SHORT).show();
+                        menuItem.setChecked(true);
+                        drawer.closeDrawers();
+                        if(i==R.id.nav_home) {
+                            Intent intent = new Intent(MenuActivity.this, localActivity.class);
+                            startActivity(intent);
+                        }else if(i==R.id.nav_gallery)
+                        {
+                            Intent intent = new Intent(MenuActivity.this, mapActivity.class);
+                            startActivity(intent);
+                        }
+                        // close drawer when item is tapped
+
+
+
+                        // Add code here to update the UI based on the item selected
+                        // For example, swap UI fragments here
+
+                        return true;
+                    }
+                });
     }
 
     @Override
