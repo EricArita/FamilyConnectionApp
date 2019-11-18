@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml:2:1-46:12
-INJECTED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml:2:1-46:12
-INJECTED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml:2:1-46:12
-INJECTED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml:2:1-46:12
+ADDED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:2:1-46:12
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\htc8s\.gradle\caches\transforms-2\files-2.1\4882c64b33418d4d6e2bb0cb7ae334e3\play-services-maps-17.0.0\AndroidManifest.xml:17:1-38:12
 MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\htc8s\.gradle\caches\transforms-2\files-2.1\c7ab51cd4f5caf2b0e67daf75e7a410e\jetified-play-services-location-16.0.0\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.navigation:navigation-ui:2.0.0] C:\Users\htc8s\.gradle\caches\transforms-2\files-2.1\eb1c288a6c4aaaa5529de9893bd5c343\jetified-navigation-ui-2.0.0\AndroidManifest.xml:17:1-22:12
@@ -50,49 +50,49 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\htc8s\.gradle\ca
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\htc8s\.gradle\caches\transforms-2\files-2.1\8cf450d11667f9427b289f08c2115f5c\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\htc8s\.gradle\caches\transforms-2\files-2.1\d31a9dbc3f8404c541e987748c42963b\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\htc8s\.gradle\caches\transforms-2\files-2.1\699bc310780b1730bce8fe271ffeca8b\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
-INJECTED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml:2:1-46:12
-INJECTED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml:2:1-46:12
-INJECTED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:2:1-46:12
 	package
-		ADDED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml:3:5-46
-		INJECTED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml
-		INJECTED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml
+		ADDED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:3:5-46
+		INJECTED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml
+		INJECTED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml
-		ADDED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml:2:1-46:12
-		INJECTED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml
+		INJECTED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml
+		ADDED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:2:1-46:12
+		INJECTED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml
-		ADDED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml:2:1-46:12
-		INJECTED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml
+		INJECTED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml
+		ADDED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:2:1-46:12
+		INJECTED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml:5:5-67
+ADDED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:5:5-67
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\htc8s\.gradle\caches\transforms-2\files-2.1\4882c64b33418d4d6e2bb0cb7ae334e3\play-services-maps-17.0.0\AndroidManifest.xml:24:5-67
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\htc8s\.gradle\caches\transforms-2\files-2.1\4882c64b33418d4d6e2bb0cb7ae334e3\play-services-maps-17.0.0\AndroidManifest.xml:24:5-67
 	android:name
-		ADDED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml:5:22-64
+		ADDED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:5:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml:6:5-79
+ADDED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:6:5-79
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\htc8s\.gradle\caches\transforms-2\files-2.1\4882c64b33418d4d6e2bb0cb7ae334e3\play-services-maps-17.0.0\AndroidManifest.xml:23:5-79
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\htc8s\.gradle\caches\transforms-2\files-2.1\4882c64b33418d4d6e2bb0cb7ae334e3\play-services-maps-17.0.0\AndroidManifest.xml:23:5-79
 	android:name
-		ADDED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml:6:22-76
+		ADDED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:6:22-76
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml:7:5-81
+ADDED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:7:5-81
 	android:name
-		ADDED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml:7:22-78
+		ADDED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:7:22-78
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml:8:5-81
+ADDED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:8:5-81
 	android:name
-		ADDED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml:8:22-78
+		ADDED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:8:22-78
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml:9:5-79
+ADDED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:9:5-79
 	android:name
-		ADDED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml:9:22-76
+		ADDED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:9:22-76
 application
-ADDED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml:11:5-44:19
+ADDED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:11:5-44:19
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\htc8s\.gradle\caches\transforms-2\files-2.1\4882c64b33418d4d6e2bb0cb7ae334e3\play-services-maps-17.0.0\AndroidManifest.xml:30:5-36:19
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\htc8s\.gradle\caches\transforms-2\files-2.1\4882c64b33418d4d6e2bb0cb7ae334e3\play-services-maps-17.0.0\AndroidManifest.xml:30:5-36:19
 MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\htc8s\.gradle\caches\transforms-2\files-2.1\c7ab51cd4f5caf2b0e67daf75e7a410e\jetified-play-services-location-16.0.0\AndroidManifest.xml:7:5-20
@@ -120,73 +120,73 @@ MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\htc8s\.gradle\
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.0.1] C:\Users\htc8s\.gradle\caches\transforms-2\files-2.1\c0a39027978b83a483a047f5c31d0c4e\core-1.0.1\AndroidManifest.xml:22:18-86
 	android:supportsRtl
-		ADDED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml:16:9-35
+		ADDED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:16:9-35
 	android:label
-		ADDED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml:14:9-41
+		ADDED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:14:9-41
 	android:roundIcon
-		ADDED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml:15:9-54
+		ADDED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:15:9-54
 	android:icon
-		ADDED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml:13:9-43
+		ADDED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:13:9-43
 	android:allowBackup
-		ADDED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml:12:9-35
+		ADDED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:12:9-35
 	android:theme
-		ADDED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml:17:9-40
+		ADDED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:17:9-40
 activity#com.example.familyconnectionapp.mapActivity
-ADDED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml:18:9-58
+ADDED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:18:9-58
 	android:name
-		ADDED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml:18:19-46
+		ADDED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:18:19-46
 activity#com.example.familyconnectionapp.localActivity
-ADDED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml:19:9-51
+ADDED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:19:9-51
 	android:name
-		ADDED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml:19:19-48
+		ADDED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:19:19-48
 meta-data#com.google.android.gms.version
-ADDED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml:21:9-23:69
+ADDED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:21:9-23:69
 MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\htc8s\.gradle\caches\transforms-2\files-2.1\807fb90e4c4d91a00e1fdd18344f458d\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
 MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\htc8s\.gradle\caches\transforms-2\files-2.1\807fb90e4c4d91a00e1fdd18344f458d\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
 	android:value
-		ADDED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml:23:13-66
+		ADDED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:23:13-66
 	android:name
-		ADDED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml:22:13-58
+		ADDED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:22:13-58
 meta-data#com.google.android.maps.v2.API_KEY
-ADDED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml:24:9-26:51
+ADDED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:24:9-26:51
 	android:value
-		ADDED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml:26:13-48
+		ADDED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:26:13-48
 	android:name
-		ADDED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml:25:13-62
+		ADDED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:25:13-62
 activity#com.example.familyconnectionapp.MenuActivity
-ADDED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml:31:9-34:59
+ADDED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:31:9-34:59
 	android:label
-		ADDED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml:33:13-56
+		ADDED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:33:13-56
 	android:theme
-		ADDED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml:34:13-56
+		ADDED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:34:13-56
 	android:name
-		ADDED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml:32:13-41
+		ADDED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:32:13-41
 activity#com.example.familyconnectionapp.ActivitySignUp
-ADDED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml:35:9-52
+ADDED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:35:9-52
 	android:name
-		ADDED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml:35:19-49
+		ADDED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:35:19-49
 activity#com.example.familyconnectionapp.ActivityLogin
-ADDED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml:36:9-51
+ADDED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:36:9-51
 	android:name
-		ADDED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml:36:19-48
+		ADDED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:36:19-48
 activity#com.example.familyconnectionapp.MainActivity
-ADDED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml:37:9-43:20
+ADDED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:37:9-43:20
 	android:name
-		ADDED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml:37:19-47
+		ADDED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:37:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml:38:13-42:29
+ADDED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:38:13-42:29
 action#android.intent.action.MAIN
-ADDED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml:39:17-69
+ADDED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:39:17-69
 	android:name
-		ADDED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml:39:25-66
+		ADDED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:39:25-66
 category#android.intent.category.LAUNCHER
-ADDED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml:41:17-77
+ADDED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:41:17-77
 	android:name
-		ADDED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml:41:27-74
+		ADDED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:41:27-74
 uses-sdk
-INJECTED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml
-INJECTED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml
+INJECTED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml
+INJECTED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\htc8s\.gradle\caches\transforms-2\files-2.1\4882c64b33418d4d6e2bb0cb7ae334e3\play-services-maps-17.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\htc8s\.gradle\caches\transforms-2\files-2.1\4882c64b33418d4d6e2bb0cb7ae334e3\play-services-maps-17.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\htc8s\.gradle\caches\transforms-2\files-2.1\c7ab51cd4f5caf2b0e67daf75e7a410e\jetified-play-services-location-16.0.0\AndroidManifest.xml:5:5-44
@@ -279,16 +279,16 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\htc8s\.gradle\caches\transform
 MERGED from [androidx.print:print:1.0.0] C:\Users\htc8s\.gradle\caches\transforms-2\files-2.1\d31a9dbc3f8404c541e987748c42963b\print-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\htc8s\.gradle\caches\transforms-2\files-2.1\699bc310780b1730bce8fe271ffeca8b\interpolator-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\htc8s\.gradle\caches\transforms-2\files-2.1\699bc310780b1730bce8fe271ffeca8b\interpolator-1.0.0\AndroidManifest.xml:20:5-44
-INJECTED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml
-INJECTED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml
+INJECTED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml
+INJECTED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml
-		ADDED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml
-		INJECTED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml
+		INJECTED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml
+		ADDED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml
+		INJECTED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml
-		ADDED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml
-		INJECTED from I:\FamilyConnectionApp-master\FamilyConnectionApp-master\app\src\main\AndroidManifest.xml
+		INJECTED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml
+		ADDED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml
+		INJECTED from D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml
 uses-feature#0x00020000
 ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\htc8s\.gradle\caches\transforms-2\files-2.1\4882c64b33418d4d6e2bb0cb7ae334e3\play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
 	android:glEsVersion
