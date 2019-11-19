@@ -5,11 +5,18 @@
 5    android:versionName="1.0" >
 6
 7    <uses-sdk
+<<<<<<< HEAD
 8        android:minSdkVersion="16"
 8-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml
+=======
+8        android:minSdkVersion="15"
+<<<<<<< HEAD
+8-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml
+>>>>>>> origin/master
 9        android:targetSdkVersion="29" />
 9-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml
 10
+<<<<<<< HEAD
 11    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
 12    <!-- <uses-sdk android:minSdkVersion="14"/> -->
 13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -213,3 +220,240 @@
 117    </application>
 118
 119</manifest>
+=======
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:5:5-67
+11-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:6:5-79
+12-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:6:22-76
+13    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+13-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:7:5-81
+13-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:7:22-78
+14    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+14-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:8:5-81
+14-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:8:22-78
+15    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+15-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:9:5-79
+15-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:9:22-76
+16
+17    <uses-feature
+17-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\htc8s\.gradle\caches\transforms-2\files-2.1\4882c64b33418d4d6e2bb0cb7ae334e3\play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
+18        android:glEsVersion="0x00020000"
+18-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\htc8s\.gradle\caches\transforms-2\files-2.1\4882c64b33418d4d6e2bb0cb7ae334e3\play-services-maps-17.0.0\AndroidManifest.xml:27:9-41
+19        android:required="true" />
+19-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\htc8s\.gradle\caches\transforms-2\files-2.1\4882c64b33418d4d6e2bb0cb7ae334e3\play-services-maps-17.0.0\AndroidManifest.xml:28:9-32
+20
+21    <application
+21-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:11:5-44:19
+22        android:allowBackup="true"
+22-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:12:9-35
+=======
+8-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:5:5-67
+11-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+12-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:6:5-79
+12-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:6:22-76
+13
+14    <!-- Include required permissions for Google Maps API to run. -->
+15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+15-->[com.google.android.gms:play-services-maps:9.6.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\2c9c6b61c24b825f73011105aacb30d9\jetified-play-services-maps-9.6.1\AndroidManifest.xml:19:5-78
+15-->[com.google.android.gms:play-services-maps:9.6.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\2c9c6b61c24b825f73011105aacb30d9\jetified-play-services-maps-9.6.1\AndroidManifest.xml:19:22-76
+16
+17    <uses-feature
+17-->[com.google.android.gms:play-services-maps:9.6.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\2c9c6b61c24b825f73011105aacb30d9\jetified-play-services-maps-9.6.1\AndroidManifest.xml:21:5-77
+18        android:glEsVersion="0x00020000"
+18-->[com.google.android.gms:play-services-maps:9.6.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\2c9c6b61c24b825f73011105aacb30d9\jetified-play-services-maps-9.6.1\AndroidManifest.xml:21:19-51
+19        android:required="true" />
+19-->[com.google.android.gms:play-services-maps:9.6.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\2c9c6b61c24b825f73011105aacb30d9\jetified-play-services-maps-9.6.1\AndroidManifest.xml:21:52-75
+20
+21    <application
+21-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:8:5-34:19
+22        android:allowBackup="true"
+22-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:9:9-35
+>>>>>>> 23e1bb2b330ce61d84c428ba65285d1c3c6fd106
+23        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+23-->[androidx.core:core:1.0.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\c0a39027978b83a483a047f5c31d0c4e\core-1.0.1\AndroidManifest.xml:22:18-86
+24        android:debuggable="true"
+25        android:icon="@mipmap/ic_launcher"
+<<<<<<< HEAD
+25-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:13:9-43
+26        android:label="@string/app_name"
+26-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:14:9-41
+27        android:roundIcon="@mipmap/ic_launcher_round"
+27-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:15:9-54
+28        android:supportsRtl="true"
+28-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:16:9-35
+29        android:testOnly="true"
+30        android:theme="@style/AppTheme" >
+30-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:17:9-40
+31        <activity android:name="com.example.familyconnectionapp.mapActivity" />
+31-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:18:9-58
+31-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:18:19-46
+32        <activity android:name="com.example.familyconnectionapp.localActivity" />
+32-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:19:9-51
+32-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:19:19-48
+33
+34        <meta-data
+34-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:21:9-23:69
+35            android:name="com.google.android.gms.version"
+35-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:22:13-58
+36            android:value="@integer/google_play_services_version" />
+36-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:23:13-66
+37        <meta-data
+37-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:24:9-26:51
+38            android:name="com.google.android.maps.v2.API_KEY"
+38-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:25:13-62
+39            android:value="@string/map_api_key" />
+39-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:26:13-48
+40        <meta-data
+40-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:21:9-23:69
+41            android:name="com.google.android.gms.version"
+41-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:22:13-58
+42            android:value="@integer/google_play_services_version" />
+42-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:23:13-66
+43
+44        <activity
+44-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:31:9-34:59
+45            android:name="com.example.familyconnectionapp.MenuActivity"
+45-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:32:13-41
+46            android:label="@string/title_activity_menu"
+46-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:33:13-56
+47            android:theme="@style/AppTheme.NoActionBar" />
+47-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:34:13-56
+48        <activity android:name="com.example.familyconnectionapp.ActivitySignUp" />
+48-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:35:9-52
+48-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:35:19-49
+49        <activity android:name="com.example.familyconnectionapp.ActivityLogin" />
+49-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:36:9-51
+49-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:36:19-48
+50        <activity android:name="com.example.familyconnectionapp.MainActivity" >
+50-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:37:9-43:20
+50-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:37:19-47
+51            <intent-filter>
+51-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:38:13-42:29
+52                <action android:name="android.intent.action.MAIN" />
+52-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:39:17-69
+52-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:39:25-66
+53
+54                <category android:name="android.intent.category.LAUNCHER" />
+54-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:41:17-77
+54-->D:\java\FamilyConnectionApp\app\src\main\AndroidManifest.xml:41:27-74
+55            </intent-filter>
+56        </activity>
+57        <!-- Needs to be explicitly declared on P+ -->
+58        <uses-library
+58-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\htc8s\.gradle\caches\transforms-2\files-2.1\4882c64b33418d4d6e2bb0cb7ae334e3\play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
+59            android:name="org.apache.http.legacy"
+59-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\htc8s\.gradle\caches\transforms-2\files-2.1\4882c64b33418d4d6e2bb0cb7ae334e3\play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
+60            android:required="false" />
+60-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\htc8s\.gradle\caches\transforms-2\files-2.1\4882c64b33418d4d6e2bb0cb7ae334e3\play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
+61
+62        <activity
+62-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\htc8s\.gradle\caches\transforms-2\files-2.1\bd8a4935a17dde33dc1d62d4f9914d3b\play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+63            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+63-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\htc8s\.gradle\caches\transforms-2\files-2.1\bd8a4935a17dde33dc1d62d4f9914d3b\play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+64            android:exported="false"
+64-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\htc8s\.gradle\caches\transforms-2\files-2.1\bd8a4935a17dde33dc1d62d4f9914d3b\play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+65            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+65-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\htc8s\.gradle\caches\transforms-2\files-2.1\bd8a4935a17dde33dc1d62d4f9914d3b\play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+66
+67        <provider
+67-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\htc8s\.gradle\caches\transforms-2\files-2.1\b3c088406576b03c69a90621925ddf75\lifecycle-process-2.0.0\AndroidManifest.xml:23:9-27:43
+68            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+68-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\htc8s\.gradle\caches\transforms-2\files-2.1\b3c088406576b03c69a90621925ddf75\lifecycle-process-2.0.0\AndroidManifest.xml:24:13-79
+69            android:authorities="com.example.familyconnectionapp.lifecycle-process"
+69-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\htc8s\.gradle\caches\transforms-2\files-2.1\b3c088406576b03c69a90621925ddf75\lifecycle-process-2.0.0\AndroidManifest.xml:25:13-69
+70            android:exported="false"
+70-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\htc8s\.gradle\caches\transforms-2\files-2.1\b3c088406576b03c69a90621925ddf75\lifecycle-process-2.0.0\AndroidManifest.xml:26:13-37
+71            android:multiprocess="true" />
+71-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\htc8s\.gradle\caches\transforms-2\files-2.1\b3c088406576b03c69a90621925ddf75\lifecycle-process-2.0.0\AndroidManifest.xml:27:13-40
+72    </application>
+73
+74</manifest>
+=======
+25-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:10:9-43
+26        android:label="@string/app_name"
+26-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:11:9-41
+27        android:roundIcon="@mipmap/ic_launcher_round"
+27-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:12:9-54
+28        android:supportsRtl="true"
+28-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:13:9-35
+29        android:testOnly="true"
+30        android:theme="@style/AppTheme" >
+30-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:14:9-40
+31        <activity android:name="com.example.familyconnectionapp.CreateCodeActivity" />
+31-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:15:9-65
+31-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:15:19-53
+32
+33        <meta-data
+33-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:17:9-19:51
+34            android:name="com.google.android.maps.v2.API_KEY"
+34-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:18:13-62
+35            android:value="@string/map_api_key" />
+35-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:19:13-48
+36
+37        <activity
+37-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:21:9-24:59
+38            android:name="com.example.familyconnectionapp.MenuActivity"
+38-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:22:13-41
+39            android:label="@string/title_activity_menu"
+39-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:23:13-56
+40            android:theme="@style/AppTheme.NoActionBar" />
+40-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:24:13-56
+41        <activity android:name="com.example.familyconnectionapp.ActivitySignUp" />
+41-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:25:9-52
+41-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:25:19-49
+42        <activity android:name="com.example.familyconnectionapp.ActivityLogin" />
+42-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:26:9-51
+42-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:26:19-48
+43        <activity android:name="com.example.familyconnectionapp.MainActivity" >
+43-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:27:9-33:20
+43-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:27:19-47
+44            <intent-filter>
+44-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:28:13-32:29
+45                <action android:name="android.intent.action.MAIN" />
+45-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:29:17-69
+45-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:29:25-66
+46
+47                <category android:name="android.intent.category.LAUNCHER" />
+47-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:31:17-77
+47-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:31:27-74
+48            </intent-filter>
+49        </activity>
+50        <activity
+50-->[com.google.android.gms:play-services-base:9.6.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\88cd9812966531e54cd8d4f90865ba6a\jetified-play-services-base-9.6.1\AndroidManifest.xml:19:9-172
+51            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+51-->[com.google.android.gms:play-services-base:9.6.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\88cd9812966531e54cd8d4f90865ba6a\jetified-play-services-base-9.6.1\AndroidManifest.xml:19:19-85
+52            android:exported="false"
+52-->[com.google.android.gms:play-services-base:9.6.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\88cd9812966531e54cd8d4f90865ba6a\jetified-play-services-base-9.6.1\AndroidManifest.xml:19:146-170
+53            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+53-->[com.google.android.gms:play-services-base:9.6.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\88cd9812966531e54cd8d4f90865ba6a\jetified-play-services-base-9.6.1\AndroidManifest.xml:19:86-145
+54
+55        <meta-data
+55-->[com.google.android.gms:play-services-basement:9.6.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\9e6bcd74489c828e310428ffd1a2cc9c\jetified-play-services-basement-9.6.1\AndroidManifest.xml:20:9-121
+56            android:name="com.google.android.gms.version"
+56-->[com.google.android.gms:play-services-basement:9.6.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\9e6bcd74489c828e310428ffd1a2cc9c\jetified-play-services-basement-9.6.1\AndroidManifest.xml:20:20-65
+57            android:value="@integer/google_play_services_version" />
+57-->[com.google.android.gms:play-services-basement:9.6.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\9e6bcd74489c828e310428ffd1a2cc9c\jetified-play-services-basement-9.6.1\AndroidManifest.xml:20:66-119
+58
+59        <provider
+59-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\b3c088406576b03c69a90621925ddf75\lifecycle-process-2.0.0\AndroidManifest.xml:23:9-27:43
+60            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+60-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\b3c088406576b03c69a90621925ddf75\lifecycle-process-2.0.0\AndroidManifest.xml:24:13-79
+61            android:authorities="com.example.familyconnectionapp.lifecycle-process"
+61-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\b3c088406576b03c69a90621925ddf75\lifecycle-process-2.0.0\AndroidManifest.xml:25:13-69
+62            android:exported="false"
+62-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\b3c088406576b03c69a90621925ddf75\lifecycle-process-2.0.0\AndroidManifest.xml:26:13-37
+63            android:multiprocess="true" />
+63-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\b3c088406576b03c69a90621925ddf75\lifecycle-process-2.0.0\AndroidManifest.xml:27:13-40
+64    </application>
+65
+66</manifest>
+>>>>>>> 23e1bb2b330ce61d84c428ba65285d1c3c6fd106
+>>>>>>> origin/master
