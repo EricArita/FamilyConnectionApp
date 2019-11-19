@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JoinCircleActivity">
+
+    <EditText
+        android:id="@+id/edJoin2"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="number"
+        android:lines="1"
+        android:maxLines="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.242"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:maxLength="1"
+        app:layout_constraintVertical_bias="0.19999999" />
+
+    <EditText
+        android:id="@+id/edJoin5"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="number"
+        android:lines="1"
+        android:maxLines="1"
+        android:maxLength="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.707"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19999999" />
+
+    <EditText
+        android:id="@+id/edJoin1"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="number"
+        android:lines="1"
+        android:maxLength="1"
+        android:maxLines="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19999999" />
+
+    <EditText
+        android:id="@+id/edJoin4"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="number"
+        android:lines="1"
+        android:maxLength="1"
+        android:maxLines="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19999999" />
+
+    <EditText
+        android:id="@+id/edJoin3"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="number"
+        android:lines="1"
+        android:maxLines="1"
+        android:maxLength="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.404"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19999999" />
+
+    <EditText
+        android:id="@+id/edJoin6"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="number"
+        android:lines="1"
+        android:maxLength="1"
+        android:maxLines="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.882"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19999999" />
+
+    <TextView
+        android:id="@+id/tvJoinTitle"
+        android:layout_width="223dp"
+        android:layout_height="39dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.622"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.06" />
+
+    <Button
+        android:id="@+id/btJoinSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.704" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

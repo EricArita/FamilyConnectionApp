@@ -28,38 +28,7 @@ import com.google.android.gms.location.LocationServices;
 
 import java.util.Locale;
 
-
-
-
-
-        import android.Manifest;
-        import android.content.pm.PackageManager;
-        import android.location.Location;
-        import android.location.LocationManager;
-        import android.os.Bundle;
-        import android.util.Log;
-        import android.view.View;
-        import android.widget.Button;
-        import android.widget.CompoundButton;
-        import android.widget.Switch;
-        import android.widget.TextView;
-        import android.widget.Toast;
-
-        import androidx.annotation.NonNull;
-        import androidx.appcompat.app.AppCompatActivity;
-        import androidx.core.app.ActivityCompat;
-        import androidx.core.content.ContextCompat;
-
-        import com.google.android.gms.common.ConnectionResult;
-        import com.google.android.gms.common.GoogleApiAvailability;
-        import com.google.android.gms.common.api.GoogleApiClient;
-        import com.google.android.gms.location.LocationListener;
-        import com.google.android.gms.location.LocationRequest;
-        import com.google.android.gms.location.LocationServices;
-
-        import java.util.Locale;
-
-public class localActivity extends AppCompatActivity implements GoogleApiClient.ConnectionCallbacks,
+public class LocationActivity extends AppCompatActivity implements GoogleApiClient.ConnectionCallbacks,
         GoogleApiClient.OnConnectionFailedListener, LocationListener {
     public static final String TAG = MainActivity.class.getSimpleName();
     private static final long UPDATE_INTERVAL = 5000;
@@ -96,7 +65,7 @@ public class localActivity extends AppCompatActivity implements GoogleApiClient.
             public void onClick(View v) {
                 if (isGpsOn()) {
                     updateUi();
-                    Intent intent =new Intent(localActivity.this ,mapActivity.class);
+                    Intent intent =new Intent(LocationActivity.this , MapActivity.class);
                     Bundle bundle=new Bundle();
 
 
@@ -106,7 +75,7 @@ public class localActivity extends AppCompatActivity implements GoogleApiClient.
                     intent.putExtra("dulieu",bundle);
                     startActivity(intent);
                 } else {
-                    Toast.makeText(localActivity.this, "GPS is OFF", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LocationActivity.this, "GPS is OFF", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -116,7 +85,7 @@ public class localActivity extends AppCompatActivity implements GoogleApiClient.
                     @Override
                     public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                         if (!isGpsOn()) {
-                            Toast.makeText(localActivity.this, "GPS is OFF",
+                            Toast.makeText(LocationActivity.this, "GPS is OFF",
                                     Toast.LENGTH_SHORT).show();
                             mSwAutoUpdateLocation.setChecked(false);
                             return;

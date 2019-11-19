@@ -60,7 +60,7 @@ public class RegisterActivity extends AppCompatActivity {
 
         //Intent intentGet = getIntent();
         btnRegister.setOnClickListener(v -> {
-            Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
+            Intent intent = new Intent(RegisterActivity.this, CreateCodeActivity.class);
 
             final String name = edtName.getText().toString();
             final String email = edtEmail.getText().toString();
@@ -70,6 +70,7 @@ public class RegisterActivity extends AppCompatActivity {
             final Boolean isSharing = false;
             final String lat = "";
             final String lng = "";
+            intent.putExtra("code",circleCode);
 
             DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss", Locale.US);
             final String date = dateFormat.format(Calendar.getInstance().getTime());

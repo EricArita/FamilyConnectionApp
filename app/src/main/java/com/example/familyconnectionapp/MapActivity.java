@@ -20,7 +20,7 @@ import android.os.Bundle;
         import com.google.android.gms.maps.model.LatLng;
         import com.google.android.gms.maps.model.MarkerOptions;
 
-public class  mapActivity extends FragmentActivity implements OnMapReadyCallback {
+public class MapActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
 
