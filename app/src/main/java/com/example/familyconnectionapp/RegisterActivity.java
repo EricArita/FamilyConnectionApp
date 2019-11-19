@@ -15,6 +15,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Locale;
+import java.util.Map;
 import java.util.Random;
 
 public class RegisterActivity extends AppCompatActivity {
@@ -68,15 +69,14 @@ public class RegisterActivity extends AppCompatActivity {
             final String confirmPassword = edtConfirm.getText().toString();
             final String circleCode = generateRandomCirclCode();
             final Boolean isSharing = false;
-            final String lat = "";
-            final String lng = "";
+            final Map<String, Double> deviceCoordinates = MapService.getCoordinates();
 
             DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss", Locale.US);
             final String date = dateFormat.format(Calendar.getInstance().getTime());
 
             if (isValidRegisterInfo(name, email, password, confirmPassword)) {
                 startActivity(intent);
-                crudFirebase.createUser(name, email, password, date, circleCode, isSharing, lat, lng);
+                crudFirebase.createUser(name, email, password, date, circleCode, isSharing, deviceCoordinates.get("lat"), deviceCoordinates.get("lng"));
             }
             else {
 

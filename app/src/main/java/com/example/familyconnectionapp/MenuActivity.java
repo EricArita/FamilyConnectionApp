@@ -65,11 +65,11 @@ public class MenuActivity extends AppCompatActivity {
                         menuItem.setChecked(true);
                         drawer.closeDrawers();
                         if(i==R.id.nav_home) {
-                            Intent intent = new Intent(MenuActivity.this, localActivity.class);
+                            Intent intent = new Intent(MenuActivity.this, LocationActivity.class);
                             startActivity(intent);
                         }else if(i==R.id.nav_gallery)
                         {
-                            Intent intent = new Intent(MenuActivity.this, mapActivity.class);
+                            Intent intent = new Intent(MenuActivity.this, MapActivity.class);
                             startActivity(intent);
                         }
                         // close drawer when item is tapped

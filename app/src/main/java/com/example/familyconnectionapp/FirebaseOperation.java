@@ -23,7 +23,7 @@ public class FirebaseOperation {
         }
     }
 
-    public void createUser(String name, String email, String password, String date, String circleCode, Boolean isSharing, String lat, String lng) {
+    public void createUser(String name, String email, String password, String date, String circleCode, Boolean isSharing, Double lat, Double lng) {
         String userId = dbReference.child("Users").push().getKey();
         UserModel user = new UserModel(userId, name, email, password, date, circleCode, isSharing, lat, lng);
         dbReference.child("Users").child(userId).setValue(user);
