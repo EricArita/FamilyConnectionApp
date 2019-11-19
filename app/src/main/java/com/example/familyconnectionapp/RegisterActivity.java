@@ -39,26 +39,8 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     private Boolean isValidRegisterInfo(String name, String email, String password, String confirmPassword){
-        if (password.length() >= 6 && confirmPassword == password) {
-
-            AlertDialog.Builder alertBuilder = new AlertDialog.Builder(this);
-            alertBuilder.setMessage("Write your message here.");
-            alertBuilder.setCancelable(true);
-
-            alertBuilder.setPositiveButton(
-                    "Yes",
-                    (dialog, id) -> dialog.cancel()
-            );
-
-            alertBuilder.setNegativeButton(
-                    "No",
-                    (dialog, id) -> dialog.cancel());
-
-            AlertDialog alert = alertBuilder.create();
-            alert.show();
-
+        if (password.length() < 6 || !confirmPassword.equals(password))
             return false;
-        }
 
         return true;
     }
@@ -78,7 +60,7 @@ public class RegisterActivity extends AppCompatActivity {
 
         //Intent intentGet = getIntent();
         btnRegister.setOnClickListener(v -> {
-            Intent intent = new Intent(RegisterActivity.this, MenuActivity.class);
+            Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
 
             final String name = edtName.getText().toString();
             final String email = edtEmail.getText().toString();
@@ -95,6 +77,20 @@ public class RegisterActivity extends AppCompatActivity {
             if (isValidRegisterInfo(name, email, password, confirmPassword)) {
                 startActivity(intent);
                 crudFirebase.createUser(name, email, password, date, circleCode, isSharing, lat, lng);
+            }
+            else {
+
+                AlertDialog.Builder alertBuilder = new AlertDialog.Builder(this);
+                alertBuilder.setMessage("Your password is not valid. Try again !");
+                alertBuilder.setCancelable(true);
+
+                alertBuilder.setPositiveButton(
+                        "Ok",
+                        (dialog, id) -> dialog.cancel()
+                );
+
+                AlertDialog alert = alertBuilder.create();
+                alert.show();
             }
         });
     }
