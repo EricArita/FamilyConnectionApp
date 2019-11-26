@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.EditText;
 import  android.widget.Button;
 
@@ -14,6 +15,7 @@ public class LoginActivity extends AppCompatActivity {
     private EditText edtPassword;
     private Button btnLogin;
     private FirebaseOperation crudFireBase;
+    private UserModel userInfo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,18 +25,21 @@ public class LoginActivity extends AppCompatActivity {
         edtEmail = findViewById(R.id.edtEmail);
         edtPassword = findViewById(R.id.edtPassword);
         btnLogin = findViewById(R.id.btnLogin);
+        userInfo = new UserModel();
 
         crudFireBase = new FirebaseOperation();
 
         btnLogin.setOnClickListener(v -> {
+            boolean isExistAccount = false;
             boolean isValidEmail = false;
             boolean isValidPassword = false;
-            boolean isExistAccount = false;
             Intent intent = new Intent(LoginActivity.this, MenuActivity.class);
 
-            UserModel userInfo = crudFireBase.getUser(edtEmail.getText().toString());
+           userInfo = crudFireBase.getUser(edtEmail.getText().toString());
 
-            if (userInfo != null) {
+           Log.d("tag", userInfo.toString());
+
+            if (userInfo.email != null) {
                 isExistAccount = true;
 
                 if (userInfo.email.equals(edtEmail.getText().toString())) {
@@ -46,11 +51,9 @@ public class LoginActivity extends AppCompatActivity {
                 }
             }
 
-
-
             if (!isExistAccount){
                 AlertDialog.Builder alertBuilder = new AlertDialog.Builder(this);
-                alertBuilder.setMessage("Account does not exist! Please create an account");
+                alertBuilder.setMessage("Account does not exists !");
                 alertBuilder.setCancelable(true);
 
                 alertBuilder.setPositiveButton(

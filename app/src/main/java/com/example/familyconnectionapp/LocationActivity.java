@@ -61,14 +61,17 @@ public class LocationActivity extends AppCompatActivity implements GoogleApiClie
         mBtnGetLocation.setOnClickListener(v -> {
             if (isGpsOn()) {
                 updateUi();
-                Intent intent =new Intent(LocationActivity.this , MapActivity.class);
-                Bundle bundle=new Bundle();
+                Intent intent = new Intent(LocationActivity.this, MapActivity.class);
+                Bundle bundle = new Bundle();
 
+                bundle.putDouble("kinhdo", mLastLocation.getLongitude());
+                bundle.putDouble("vido", mLastLocation.getLatitude());
 
-                bundle.putDouble("kinhdo",  mLastLocation.getLongitude());
-                bundle.putDouble("vido",  mLastLocation.getLatitude());
+                FirebaseOperation crudFirebase = new FirebaseOperation();
+                Intent intent1 = getIntent();
+                crudFirebase.updateUser(intent1.getStringExtra("userId"), mLastLocation.getLatitude(), mLastLocation.getLongitude());
 
-                intent.putExtra("dulieu",bundle);
+                intent.putExtra("dulieu", bundle);
                 startActivity(intent);
             } else {
                 Toast.makeText(LocationActivity.this, "GPS is OFF", Toast.LENGTH_SHORT).show();
@@ -83,14 +86,15 @@ public class LocationActivity extends AppCompatActivity implements GoogleApiClie
                         mSwAutoUpdateLocation.setChecked(false);
                         return;
                     }
+
                     mIsAutoUpdateLocation = isChecked;
                     if (isChecked) {
                         startLocationUpdates();
                     } else {
                         stopLocationUpdates();
                     }
-                });
-
+                }
+         );
     }
 
     private void initViews() {

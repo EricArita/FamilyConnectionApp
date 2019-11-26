@@ -32,6 +32,7 @@ public class MenuActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
+
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         FloatingActionButton fab = findViewById(R.id.fab);
@@ -64,13 +65,33 @@ public class MenuActivity extends AppCompatActivity {
                         Toast.makeText(MenuActivity.this, ""+i, Toast.LENGTH_SHORT).show();
                         menuItem.setChecked(true);
                         drawer.closeDrawers();
+                        Intent intent1 = getIntent();
                         if(i==R.id.nav_home) {
                             Intent intent = new Intent(MenuActivity.this, LocationActivity.class);
+                            intent.putExtra("userId", intent1.getStringExtra("userId"));
                             startActivity(intent);
                         }else if(i==R.id.nav_gallery)
                         {
-                            Intent intent = new Intent(MenuActivity.this, MapActivity.class);
+                            //Intent intent = new Intent(MenuActivity.this, MapActivity.class);
+                            Intent intent = new Intent(MenuActivity.this, ListUserActivity.class);
                             startActivity(intent);
+
+                        }else if(i==R.id.nav_slideshow)
+                        {
+                            Intent intent = new Intent(MenuActivity.this, JoinCircleActivity.class);
+                            startActivity(intent);
+                        }
+                        else if(i==R.id.nav_tools)
+                        {
+                            Intent intent = new Intent(MenuActivity.this, ListJoinedActivity.class);
+                            startActivity(intent);
+
+                        }
+                        else if(i==R.id.nav_send)
+                        {
+                            Intent intent = new Intent(MenuActivity.this, LoginActivity.class);
+                            startActivity(intent);
+
                         }
                         // close drawer when item is tapped
 

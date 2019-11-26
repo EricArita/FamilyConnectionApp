@@ -15,7 +15,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MapActivity"></activity>
+        <activity android:name=".ListJoinedActivity"></activity>
+        <activity android:name=".JoinCircleActivity" />
+        <activity android:name=".CreateCodeActivity" />
+        <activity android:name=".ListUserActivity" />
+        <activity android:name=".MapActivity" />
+
         <activity android:name=".LocationActivity" />
 
         <meta-data
@@ -30,12 +35,12 @@
 
         <activity
             android:name=".MenuActivity"
-            android:label="@string/title_activity_menu"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:label="@string/title_activity_menu" android:theme="@style/AppTheme.NoActionBar">
         </activity>
+
         <activity android:name=".RegisterActivity" />
         <activity android:name=".LoginActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity" android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

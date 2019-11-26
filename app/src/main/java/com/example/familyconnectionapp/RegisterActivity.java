@@ -6,6 +6,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.location.Location;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -13,20 +14,17 @@ import android.widget.TextView;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Locale;
-import java.util.Map;
-import java.util.Random;
+import java.util.*;
 
 public class RegisterActivity extends AppCompatActivity {
 
-    private TextView tvConfirm;
     private EditText edtEmail;
     private EditText edtName;
     private EditText edtPassword;
     private EditText edtConfirm;
     private Button btnRegister;
     private FirebaseOperation crudFirebase;
+    //private Location mLastLocation;
 
     private String generateRandomCirclCode(){
         String circleCode = "";
@@ -61,7 +59,7 @@ public class RegisterActivity extends AppCompatActivity {
 
         //Intent intentGet = getIntent();
         btnRegister.setOnClickListener(v -> {
-            Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
+            Intent intent = new Intent(RegisterActivity.this, CreateCodeActivity.class);
 
             final String name = edtName.getText().toString();
             final String email = edtEmail.getText().toString();
@@ -69,14 +67,16 @@ public class RegisterActivity extends AppCompatActivity {
             final String confirmPassword = edtConfirm.getText().toString();
             final String circleCode = generateRandomCirclCode();
             final Boolean isSharing = false;
-            final Map<String, Double> deviceCoordinates = MapService.getCoordinates();
+            //final Map<String, Double> deviceCoordinates = MapService.getCoordinates();
+            intent.putExtra("code", circleCode);
 
             DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss", Locale.US);
             final String date = dateFormat.format(Calendar.getInstance().getTime());
 
             if (isValidRegisterInfo(name, email, password, confirmPassword)) {
+                String userId = crudFirebase.createUser(name, email, password, date, circleCode, isSharing, 0.0, 0.0);
+                intent.putExtra("userId", userId);
                 startActivity(intent);
-                crudFirebase.createUser(name, email, password, date, circleCode, isSharing, deviceCoordinates.get("lat"), deviceCoordinates.get("lng"));
             }
             else {
 

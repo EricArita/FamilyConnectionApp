@@ -27,14 +27,17 @@ import com.google.android.gms.location.LocationServices;
 import java.util.*;
 
 public class MapService {
-    private static Map<String, Double> coordinates = new HashMap<String, Double>();
+    private static Double lng;
+    private static Double lat;
     private static Location mLastLocation;
 
-    public static Map<String, Double> getCoordinates(){
-        coordinates.put("lat", mLastLocation.getLatitude());
-        coordinates.put("lat", mLastLocation.getLatitude());
+    public MapService(){}
 
-        return coordinates;
+    public static Double getLatitude(){
+       return mLastLocation.getLatitude();
     }
 
+    public static Double getLongitude() {
+        return mLastLocation.getLongitude();
+    }
 }

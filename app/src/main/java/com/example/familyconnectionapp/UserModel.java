@@ -1,5 +1,7 @@
 package com.example.familyconnectionapp;
 
+import java.util.*;
+
 public class UserModel {
 
     public String userId;
@@ -11,16 +13,15 @@ public class UserModel {
     public Boolean isSharing;
     public Double lat;
     public Double lng;
-    public List<String> members;
-    public List<String> joincircles;
+//    public List<String> members = new ArrayList<String>();
+//    public List<String> join  = new ArrayList<String>();
 
     public UserModel() {
         // Default constructor required for calls to DataSnapshot.getValue(User.class)
 
     }
 
-    public UserModel( String userId, String name, String email, String password, String date,
-                      String circleCode, Boolean isSharing, Double lat, Double lng, List<String> members, List<String> joincircles) {
+    public UserModel( String userId, String name, String email, String password, String date, String circleCode, Boolean isSharing, Double lat, Double lng) {
         this.userId = userId;
         this.name = name;
         this.email = email;
@@ -30,7 +31,5 @@ public class UserModel {
         this.isSharing = isSharing;
         this.lat = lat;
         this.lng = lng;
-        this.members = members;
-        this.joincircles = joincircles;
     }
 }

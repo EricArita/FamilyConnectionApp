@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:2:1-46:12
-INJECTED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:2:1-46:12
-INJECTED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:2:1-46:12
-INJECTED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:2:1-46:12
+ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:2:1-51:12
+INJECTED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:2:1-51:12
+INJECTED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:2:1-51:12
+INJECTED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:2:1-51:12
 MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\e72a5de81a7e3779f2edbc852e21229c\multidex-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-ui:2.1.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\e1542b98fac81d188f31fbca9723f386\jetified-navigation-ui-2.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\4f3544d200097d1926e6df3e9bf8bd41\material-1.0.0\AndroidManifest.xml:17:1-24:12
@@ -15,7 +15,7 @@ MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] C:\Users\asus\.gradl
 MERGED from [com.google.firebase:firebase-analytics:17.2.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\b3641e15b0c4863df64b988842cd7abf\firebase-analytics-17.2.1\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-database:19.2.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\f10127e9d8318f4d4750b9e91ab15d15\firebase-database-19.2.0\AndroidManifest.xml:15:1-38:12
 MERGED from [com.google.firebase:firebase-firestore:21.3.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\0a58bdb33624a74b8a717e03be3f0ba0\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:2:1-26:12
-MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\ee661a7c807eceaee369053d64faa7f0\jetified-play-services-location-16.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-location:17.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\8ffc896337f85c489577a602c0c5f080\play-services-location-17.0.0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\ce0140cbce189ad45ea4f4fc550119d8\play-services-maps-17.0.0\AndroidManifest.xml:17:1-38:12
 MERGED from [com.google.firebase:firebase-auth-interop:18.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\521744a597850a0f9d20d1889997349a\firebase-auth-interop-18.0.0\AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.android.gms:play-services-measurement-api:17.2.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\9477b8b7d3dd4ca1c2a196af0518f2f2\play-services-measurement-api-17.2.1\AndroidManifest.xml:17:1-36:12
@@ -26,7 +26,7 @@ MERGED from [com.google.android.gms:play-services-measurement:17.2.1] C:\Users\a
 MERGED from [com.google.android.gms:play-services-measurement-sdk:17.2.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\791aad2f798bf89e8078d1590ccba794\play-services-measurement-sdk-17.2.1\AndroidManifest.xml:17:1-25:12
 MERGED from [com.google.firebase:firebase-common:19.3.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\942c2a5886ce54d64edefbe8cc91c73d\jetified-firebase-common-19.3.0\AndroidManifest.xml:15:1-39:12
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\1455bb785100d4b11974d4a82c00b629\play-services-tasks-17.0.0\AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\0a9857900004f7945abbcebd79741789\play-services-places-placereport-16.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\d83b694e52fd69ed77d39eafdb6d1469\play-services-places-placereport-17.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\c3ab14403d5f5a5384a1e89f487eb924\play-services-measurement-impl-17.2.1\AndroidManifest.xml:17:1-40:12
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\ded8493386ec77fda36c948a4d1f5175\play-services-measurement-sdk-api-17.2.1\AndroidManifest.xml:17:1-27:12
 MERGED from [com.google.android.gms:play-services-measurement-base:17.2.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\34dfd403ea5d9fa8d7972a3e00bb4db5\play-services-measurement-base-17.2.1\AndroidManifest.xml:2:1-9:12
@@ -74,20 +74,20 @@ MERGED from [com.google.firebase:firebase-components:16.0.0] C:\Users\asus\.grad
 MERGED from [com.google.firebase:firebase-database-collection:17.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\62304ec1cd22dbd9633246fb9f969202\firebase-database-collection-17.0.0\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.firebase:protolite-well-known-types:17.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\62d8715c2d0f3fb1473b07df9b7b91a1\protolite-well-known-types-17.0.0\AndroidManifest.xml:2:1-11:12
 MERGED from [io.grpc:grpc-android:1.21.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\bc4adf61d3e6e96e40cb405c16b2ca2a\grpc-android-1.21.0\AndroidManifest.xml:2:1-13:12
-INJECTED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:2:1-46:12
-INJECTED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:2:1-46:12
-INJECTED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:2:1-51:12
+INJECTED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:2:1-51:12
+INJECTED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:2:1-51:12
 	package
 		ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:3:5-46
 		INJECTED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml
 		INJECTED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml
-		ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:2:1-46:12
+		ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:2:1-51:12
 		INJECTED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml
-		ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:2:1-46:12
+		ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:2:1-51:12
 		INJECTED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:2:11-69
@@ -146,7 +146,7 @@ ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml
 	android:name
 		ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:9:22-76
 application
-ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:11:5-44:19
+ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:11:5-49:19
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\4f3544d200097d1926e6df3e9bf8bd41\material-1.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\4f3544d200097d1926e6df3e9bf8bd41\material-1.0.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\186ea041bf90cfd1698e007f3ea9bff3\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
@@ -159,8 +159,8 @@ MERGED from [com.google.firebase:firebase-database:19.2.0] C:\Users\asus\.gradle
 MERGED from [com.google.firebase:firebase-database:19.2.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\f10127e9d8318f4d4750b9e91ab15d15\firebase-database-19.2.0\AndroidManifest.xml:28:5-36:19
 MERGED from [com.google.firebase:firebase-firestore:21.3.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\0a58bdb33624a74b8a717e03be3f0ba0\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:16:5-24:19
 MERGED from [com.google.firebase:firebase-firestore:21.3.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\0a58bdb33624a74b8a717e03be3f0ba0\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:16:5-24:19
-MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\ee661a7c807eceaee369053d64faa7f0\jetified-play-services-location-16.0.0\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\ee661a7c807eceaee369053d64faa7f0\jetified-play-services-location-16.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:17.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\8ffc896337f85c489577a602c0c5f080\play-services-location-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:17.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\8ffc896337f85c489577a602c0c5f080\play-services-location-17.0.0\AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\ce0140cbce189ad45ea4f4fc550119d8\play-services-maps-17.0.0\AndroidManifest.xml:30:5-36:19
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\ce0140cbce189ad45ea4f4fc550119d8\play-services-maps-17.0.0\AndroidManifest.xml:30:5-36:19
 MERGED from [com.google.firebase:firebase-auth-interop:18.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\521744a597850a0f9d20d1889997349a\firebase-auth-interop-18.0.0\AndroidManifest.xml:7:5-8:19
@@ -181,8 +181,8 @@ MERGED from [com.google.firebase:firebase-common:19.3.0] C:\Users\asus\.gradle\c
 MERGED from [com.google.firebase:firebase-common:19.3.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\942c2a5886ce54d64edefbe8cc91c73d\jetified-firebase-common-19.3.0\AndroidManifest.xml:25:5-37:19
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\1455bb785100d4b11974d4a82c00b629\play-services-tasks-17.0.0\AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\1455bb785100d4b11974d4a82c00b629\play-services-tasks-17.0.0\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\0a9857900004f7945abbcebd79741789\play-services-places-placereport-16.0.0\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\0a9857900004f7945abbcebd79741789\play-services-places-placereport-16.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\d83b694e52fd69ed77d39eafdb6d1469\play-services-places-placereport-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\d83b694e52fd69ed77d39eafdb6d1469\play-services-places-placereport-17.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\c3ab14403d5f5a5384a1e89f487eb924\play-services-measurement-impl-17.2.1\AndroidManifest.xml:28:5-38:19
 MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\c3ab14403d5f5a5384a1e89f487eb924\play-services-measurement-impl-17.2.1\AndroidManifest.xml:28:5-38:19
 MERGED from [com.google.android.gms:play-services-measurement-base:17.2.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\34dfd403ea5d9fa8d7972a3e00bb4db5\play-services-measurement-base-17.2.1\AndroidManifest.xml:7:5-20
@@ -215,58 +215,76 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\as
 		ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:12:9-35
 	android:theme
 		ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:17:9-40
+activity#com.example.familyconnectionapp.ListJoinedActivity
+ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:18:9-65
+	android:name
+		ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:18:19-53
+activity#com.example.familyconnectionapp.JoinCircleActivity
+ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:19:9-56
+	android:name
+		ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:19:19-53
+activity#com.example.familyconnectionapp.CreateCodeActivity
+ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:20:9-56
+	android:name
+		ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:20:19-53
+activity#com.example.familyconnectionapp.ListUserActivity
+ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:21:9-54
+	android:name
+		ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:21:19-51
 activity#com.example.familyconnectionapp.MapActivity
-ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:18:9-58
+ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:22:9-49
 	android:name
-		ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:18:19-46
+		ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:22:19-46
 activity#com.example.familyconnectionapp.LocationActivity
-ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:19:9-54
+ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:24:9-54
 	android:name
-		ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:19:19-51
+		ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:24:19-51
 meta-data#com.google.android.gms.version
-ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:21:9-23:69
+ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:26:9-28:69
 MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\c98981a5a37eb2aafd3389a7d84ba051\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
 MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\c98981a5a37eb2aafd3389a7d84ba051\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
 	android:value
-		ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:23:13-66
+		ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:28:13-66
 	android:name
-		ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:22:13-58
+		ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:27:13-58
 meta-data#com.google.android.maps.v2.API_KEY
-ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:24:9-26:51
+ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:29:9-31:51
 	android:value
-		ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:26:13-48
+		ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:31:13-48
 	android:name
-		ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:25:13-62
+		ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:30:13-62
 activity#com.example.familyconnectionapp.MenuActivity
-ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:31:9-35:20
+ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:36:9-39:20
 	android:label
-		ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:33:13-56
+		ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:38:13-56
 	android:theme
-		ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:34:13-56
+		ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:38:57-100
 	android:name
-		ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:32:13-41
+		ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:37:13-41
 activity#com.example.familyconnectionapp.RegisterActivity
-ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:36:9-54
+ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:41:9-54
 	android:name
-		ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:36:19-51
+		ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:41:19-51
 activity#com.example.familyconnectionapp.LoginActivity
-ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:37:9-51
+ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:42:9-51
 	android:name
-		ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:37:19-48
+		ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:42:19-48
 activity#com.example.familyconnectionapp.MainActivity
-ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:38:9-43:20
+ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:43:9-48:20
+	android:theme
+		ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:43:48-91
 	android:name
-		ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:38:19-47
+		ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:43:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:39:13-42:29
+ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:44:13-47:29
 action#android.intent.action.MAIN
-ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:40:17-69
+ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:45:17-69
 	android:name
-		ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:40:25-66
+		ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:45:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:41:17-77
+ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:46:17-77
 	android:name
-		ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:41:27-74
+		ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:46:27-74
 uses-sdk
 INJECTED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml
@@ -293,8 +311,8 @@ MERGED from [com.google.firebase:firebase-database:19.2.0] C:\Users\asus\.gradle
 MERGED from [com.google.firebase:firebase-database:19.2.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\f10127e9d8318f4d4750b9e91ab15d15\firebase-database-19.2.0\AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-firestore:21.3.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\0a58bdb33624a74b8a717e03be3f0ba0\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.firebase:firebase-firestore:21.3.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\0a58bdb33624a74b8a717e03be3f0ba0\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:7:5-9:41
-MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\ee661a7c807eceaee369053d64faa7f0\jetified-play-services-location-16.0.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\ee661a7c807eceaee369053d64faa7f0\jetified-play-services-location-16.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:17.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\8ffc896337f85c489577a602c0c5f080\play-services-location-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:17.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\8ffc896337f85c489577a602c0c5f080\play-services-location-17.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\ce0140cbce189ad45ea4f4fc550119d8\play-services-maps-17.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\ce0140cbce189ad45ea4f4fc550119d8\play-services-maps-17.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-auth-interop:18.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\521744a597850a0f9d20d1889997349a\firebase-auth-interop-18.0.0\AndroidManifest.xml:5:5-44
@@ -315,8 +333,8 @@ MERGED from [com.google.firebase:firebase-common:19.3.0] C:\Users\asus\.gradle\c
 MERGED from [com.google.firebase:firebase-common:19.3.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\942c2a5886ce54d64edefbe8cc91c73d\jetified-firebase-common-19.3.0\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\1455bb785100d4b11974d4a82c00b629\play-services-tasks-17.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\1455bb785100d4b11974d4a82c00b629\play-services-tasks-17.0.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\0a9857900004f7945abbcebd79741789\play-services-places-placereport-16.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\0a9857900004f7945abbcebd79741789\play-services-places-placereport-16.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\d83b694e52fd69ed77d39eafdb6d1469\play-services-places-placereport-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\d83b694e52fd69ed77d39eafdb6d1469\play-services-places-placereport-17.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\c3ab14403d5f5a5384a1e89f487eb924\play-services-measurement-impl-17.2.1\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\c3ab14403d5f5a5384a1e89f487eb924\play-services-measurement-impl-17.2.1\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\ded8493386ec77fda36c948a4d1f5175\play-services-measurement-sdk-api-17.2.1\AndroidManifest.xml:20:5-44
