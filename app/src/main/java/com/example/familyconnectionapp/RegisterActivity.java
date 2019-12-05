@@ -1,5 +1,6 @@
 package com.example.familyconnectionapp;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.AlertDialog;
@@ -7,10 +8,16 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.location.Location;
-import android.view.View;
+import android.util.Log;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -24,6 +31,9 @@ public class RegisterActivity extends AppCompatActivity {
     private EditText edtConfirm;
     private Button btnRegister;
     private FirebaseOperation crudFirebase;
+    private FirebaseAuth mAuth;
+    private FirebaseUser user;
+
     //private Location mLastLocation;
 
     private String generateRandomCirclCode(){
@@ -50,6 +60,7 @@ public class RegisterActivity extends AppCompatActivity {
         setContentView(R.layout.activity_sign_up);
 
         crudFirebase =  new FirebaseOperation();
+        mAuth = FirebaseAuth.getInstance();
 
         edtConfirm = findViewById(R.id.edtConfirmPassword);
         edtEmail = findViewById(R.id.edtEmail);
@@ -60,23 +71,39 @@ public class RegisterActivity extends AppCompatActivity {
         //Intent intentGet = getIntent();
         btnRegister.setOnClickListener(v -> {
             Intent intent = new Intent(RegisterActivity.this, CreateCodeActivity.class);
-
             final String name = edtName.getText().toString();
             final String email = edtEmail.getText().toString();
             final String password = edtPassword.getText().toString();
             final String confirmPassword = edtConfirm.getText().toString();
             final String circleCode = generateRandomCirclCode();
             final Boolean isSharing = false;
-            //final Map<String, Double> deviceCoordinates = MapService.getCoordinates();
             intent.putExtra("code", circleCode);
 
             DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss", Locale.US);
             final String date = dateFormat.format(Calendar.getInstance().getTime());
 
             if (isValidRegisterInfo(name, email, password, confirmPassword)) {
-                String userId = crudFirebase.createUser(name, email, password, date, circleCode, isSharing, 0.0, 0.0);
-                intent.putExtra("userId", userId);
-                startActivity(intent);
+
+                mAuth.createUserWithEmailAndPassword(email, password)
+                        .addOnCompleteListener(this, task -> {
+                            if (task.isSuccessful()) {
+                                // Sign in success, update UI with the signed-in user's information
+                                Log.d("", "createUserWithEmail:success");
+                                String userId = mAuth.getCurrentUser().getUid();
+                                crudFirebase.createUserInfo(userId, name, email, password, date, circleCode, isSharing, 0.0, 0.0);
+                                intent.putExtra("userId", userId);
+                                startActivity(intent);
+                                //updateUI(user);
+                            } else {
+                                // If sign in fails, display a message to the user.
+                                Log.w("", "createUserWithEmail:failure", task.getException());
+                                Toast.makeText(RegisterActivity.this, "Authentication failed.",
+                                        Toast.LENGTH_SHORT).show();
+                                //updateUI(null);
+                            }
+
+                            // ...
+                        });
             }
             else {
 
@@ -93,5 +120,13 @@ public class RegisterActivity extends AppCompatActivity {
                 alert.show();
             }
         });
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        // Check if user is signed in (non-null) and update UI accordingly.
+        //FirebaseUser currentUser = mAuth.getCurrentUser();
+        //updateUI(currentUser);
     }
 }

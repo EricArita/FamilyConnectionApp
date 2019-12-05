@@ -25,11 +25,12 @@ public class FirebaseOperation {
         }
     }
 
-    public String createUser(String name, String email, String password, String date, String circleCode, Boolean isSharing, Double lat, Double lng) {
-        String userId = dbReference.child("Users").push().getKey();
+    public void createUserInfo(String userId, String name, String email, String password, String date, String circleCode, Boolean isSharing, Double lat, Double lng) {
+        //String userId = dbReference.child("Users").push().getKey();
         UserModel user = new UserModel(userId, name, email, password, date, circleCode, isSharing, lat, lng);
         dbReference.child("Users").child(userId).setValue(user);
-        return userId;
+
+        return;
     }
 
     public void updateUser(String userId,Double lat, Double lng){
@@ -40,34 +41,4 @@ public class FirebaseOperation {
             e.printStackTrace();
         }
     }
-
-    public UserModel getUser(String Email){
-        if(!Email.isEmpty()) {
-            dbReference.child("Users").orderByChild("email").equalTo(Email).addChildEventListener(new ChildEventListener() {
-                @Override
-                public void onChildAdded(DataSnapshot dataSnapshot, String prevChildKey) {
-                    userInfo = dataSnapshot.getValue(UserModel.class);
-                }
-
-                @Override
-                public void onChildChanged(DataSnapshot dataSnapshot, String prevChildKey) {
-                }
-
-                @Override
-                public void onChildRemoved(DataSnapshot dataSnapshot) {
-                }
-
-                @Override
-                public void onChildMoved(DataSnapshot dataSnapshot, String prevChildKey) {
-                }
-
-                @Override
-                public void onCancelled(DatabaseError databaseError) {
-                }
-            });
-        }
-
-        return userInfo;
-    }
-
 }

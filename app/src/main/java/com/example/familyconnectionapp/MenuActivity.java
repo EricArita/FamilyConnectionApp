@@ -3,12 +3,14 @@ package com.example.familyconnectionapp;
 import android.content.Intent;
 import android.os.Bundle;
 
+import com.example.familyconnectionapp.ui.gallery.GalleryFragment;
+import com.example.familyconnectionapp.ui.myLocation.HomeFragment;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
-import android.view.MenuItem;
-import android.view.View;
-
+import androidx.appcompat.app.ActionBar;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -22,7 +24,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
-import android.widget.Toast;
+import android.widget.FrameLayout;
 
 public class MenuActivity extends AppCompatActivity {
 
@@ -35,73 +37,80 @@ public class MenuActivity extends AppCompatActivity {
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        ActionBar actionBar = getSupportActionBar();
+
+        HomeFragment homeFragment = new HomeFragment();
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        fragmentManager.beginTransaction().add(R.id.nav_host_fragment, homeFragment, "nav_host_fragment").commit();
+
+
         FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
-        final DrawerLayout drawer = findViewById(R.id.drawer_layout);
+        fab.setOnClickListener(view -> Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                .setAction("Action", null).show());
+
+        final DrawerLayout drawerLayout = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
+
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow,
-                R.id.nav_tools, R.id.nav_share, R.id.nav_send)
-                .setDrawerLayout(drawer)
+                R.id.nav_tools, R.id.nav_send)
+                .setDrawerLayout(drawerLayout)
                 .build();
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
-        NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
-        NavigationUI.setupWithNavController(navigationView, navController);
+
+//        NavController navController = Navigation.findNavController(this, R.id.toolbar);
+//        NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
+//        NavigationUI.setupWithNavController(navigationView, navController);
+
         navigationView.setNavigationItemSelectedListener(
-                new NavigationView.OnNavigationItemSelectedListener() {
-                    @Override
-                    public boolean onNavigationItemSelected(MenuItem menuItem) {
-                        // set item as selected to persist highlight
-                        int i=menuItem.getItemId();
+                menuItem -> {
 
-                        Toast.makeText(MenuActivity.this, ""+i, Toast.LENGTH_SHORT).show();
-                        menuItem.setChecked(true);
-                        drawer.closeDrawers();
-                        Intent intent1 = getIntent();
-                        if(i==R.id.nav_home) {
-                            Intent intent = new Intent(MenuActivity.this, LocationActivity.class);
-                            intent.putExtra("userId", intent1.getStringExtra("userId"));
-                            startActivity(intent);
-                        }else if(i==R.id.nav_gallery)
-                        {
-                            //Intent intent = new Intent(MenuActivity.this, MapActivity.class);
-                            Intent intent = new Intent(MenuActivity.this, ListUserActivity.class);
-                            startActivity(intent);
+                    Fragment fragment = null;
 
-                        }else if(i==R.id.nav_slideshow)
-                        {
-                            Intent intent = new Intent(MenuActivity.this, JoinCircleActivity.class);
-                            startActivity(intent);
-                        }
-                        else if(i==R.id.nav_tools)
-                        {
-                            Intent intent = new Intent(MenuActivity.this, ListJoinedActivity.class);
-                            startActivity(intent);
+                    FrameLayout fl = (FrameLayout) findViewById(R.id.nav_host_fragment);
+                    fl.removeAllViews();
 
-                        }
-                        else if(i==R.id.nav_send)
-                        {
-                            Intent intent = new Intent(MenuActivity.this, LoginActivity.class);
-                            startActivity(intent);
+                    menuItem.setChecked(true);
+                    actionBar.setTitle(menuItem.getTitle());
 
-                        }
-                        // close drawer when item is tapped
+                    int i = menuItem.getItemId();
 
+                    if(i==R.id.nav_home) {
 
+                        fragment = new HomeFragment();
 
-                        // Add code here to update the UI based on the item selected
-                        // For example, swap UI fragments here
+                    }else if(i==R.id.nav_gallery)
+                    {
 
-                        return true;
+                        fragment = new GalleryFragment();
+
+                    }else if(i==R.id.nav_slideshow)
+                    {
+                        Intent intent = new Intent(MenuActivity.this, JoinCircleActivity.class);
+                        startActivity(intent);
                     }
+                    else if(i==R.id.nav_tools)
+                    {
+                        Intent intent = new Intent(MenuActivity.this, ListJoinedActivity.class);
+                        startActivity(intent);
+
+                    }
+                    else if(i==R.id.nav_send)
+                    {
+                        Intent intent = new Intent(MenuActivity.this, LoginActivity.class);
+                        startActivity(intent);
+                    }
+
+                    drawerLayout.closeDrawers();
+
+                    // Add code here to update the UI based on the item selected
+                    // For example, swap UI fragments here
+                    // Insert the fragment by replacing any existing fragment
+                    //FragmentManager fragmentManager = getSupportFragmentManager();
+                    fragmentManager.beginTransaction().replace(R.id.nav_host_fragment, fragment).addToBackStack(null).commit();
+
+                    return true;
                 });
     }
 
