@@ -59,232 +59,233 @@
 32-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:15:9-54
 33        android:supportsRtl="true"
 33-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:16:9-35
-34        android:theme="@style/AppTheme" >
-34-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:17:9-40
-35        <activity android:name="com.example.familyconnectionapp.ListJoinedActivity" />
-35-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:18:9-65
-35-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:18:19-53
-36        <activity android:name="com.example.familyconnectionapp.JoinCircleActivity" />
-36-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:19:9-56
-36-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:19:19-53
-37        <activity android:name="com.example.familyconnectionapp.CreateCodeActivity" />
-37-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:20:9-56
-37-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:20:19-53
-38        <activity android:name="com.example.familyconnectionapp.ListUserActivity" />
-38-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:21:9-54
-38-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:21:19-51
-39        <activity android:name="com.example.familyconnectionapp.MapActivity" />
-39-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:22:9-49
-39-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:22:19-46
-40        <activity android:name="com.example.familyconnectionapp.LocationActivity" />
-40-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:24:9-54
-40-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:24:19-51
-41
-42        <meta-data
-42-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:26:9-28:69
-43            android:name="com.google.android.gms.version"
-43-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:27:13-58
-44            android:value="@integer/google_play_services_version" />
-44-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:28:13-66
-45        <meta-data
-45-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:29:9-31:51
-46            android:name="com.google.android.maps.v2.API_KEY"
-46-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:30:13-62
-47            android:value="@string/map_api_key" />
-47-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:31:13-48
-48        <meta-data
-48-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:26:9-28:69
-49            android:name="com.google.android.gms.version"
-49-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:27:13-58
-50            android:value="@integer/google_play_services_version" />
-50-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:28:13-66
-51
-52        <activity
-52-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:36:9-39:20
-53            android:name="com.example.familyconnectionapp.MenuActivity"
-53-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:37:13-41
-54            android:label="@string/title_activity_menu"
-54-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:38:13-56
-55            android:theme="@style/AppTheme.NoActionBar" >
-55-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:38:57-100
-56        </activity>
-57        <activity android:name="com.example.familyconnectionapp.RegisterActivity" />
-57-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:41:9-54
-57-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:41:19-51
-58        <activity android:name="com.example.familyconnectionapp.LoginActivity" />
-58-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:42:9-51
-58-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:42:19-48
-59        <activity
-59-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:43:9-48:20
-60            android:name="com.example.familyconnectionapp.MainActivity"
-60-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:43:19-47
-61            android:theme="@style/AppTheme.NoActionBar" >
-61-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:43:48-91
-62            <intent-filter>
-62-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:44:13-47:29
-63                <action android:name="android.intent.action.MAIN" />
-63-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:45:17-69
-63-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:45:25-66
-64
-65                <category android:name="android.intent.category.LAUNCHER" />
-65-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:46:17-77
-65-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:46:27-74
-66            </intent-filter>
-67        </activity>
-68
-69        <service
-69-->[com.google.firebase:firebase-database:19.2.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\f10127e9d8318f4d4750b9e91ab15d15\firebase-database-19.2.0\AndroidManifest.xml:29:9-35:19
-70            android:name="com.google.firebase.components.ComponentDiscoveryService"
-70-->[com.google.firebase:firebase-database:19.2.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\f10127e9d8318f4d4750b9e91ab15d15\firebase-database-19.2.0\AndroidManifest.xml:30:13-84
-71            android:directBootAware="true"
-71-->[com.google.firebase:firebase-common:19.3.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\942c2a5886ce54d64edefbe8cc91c73d\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
-72            android:exported="false" >
-72-->[com.google.firebase:firebase-database:19.2.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\f10127e9d8318f4d4750b9e91ab15d15\firebase-database-19.2.0\AndroidManifest.xml:31:13-37
-73            <meta-data
-73-->[com.google.firebase:firebase-database:19.2.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\f10127e9d8318f4d4750b9e91ab15d15\firebase-database-19.2.0\AndroidManifest.xml:32:13-34:85
-74                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
-74-->[com.google.firebase:firebase-database:19.2.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\f10127e9d8318f4d4750b9e91ab15d15\firebase-database-19.2.0\AndroidManifest.xml:33:17-109
-75                android:value="com.google.firebase.components.ComponentRegistrar" />
-75-->[com.google.firebase:firebase-database:19.2.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\f10127e9d8318f4d4750b9e91ab15d15\firebase-database-19.2.0\AndroidManifest.xml:34:17-82
-76            <meta-data
-76-->[com.google.firebase:firebase-firestore:21.3.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\0a58bdb33624a74b8a717e03be3f0ba0\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:20:13-22:85
-77                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
-77-->[com.google.firebase:firebase-firestore:21.3.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\0a58bdb33624a74b8a717e03be3f0ba0\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:21:17-111
-78                android:value="com.google.firebase.components.ComponentRegistrar" />
-78-->[com.google.firebase:firebase-firestore:21.3.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\0a58bdb33624a74b8a717e03be3f0ba0\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:22:17-82
-79            <meta-data
-79-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\db9fd4181921fcb933d270f5edbcb02d\firebase-auth-19.2.0\AndroidManifest.xml:36:13-38:85
-80                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-80-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\db9fd4181921fcb933d270f5edbcb02d\firebase-auth-19.2.0\AndroidManifest.xml:37:17-109
-81                android:value="com.google.firebase.components.ComponentRegistrar" />
-81-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\db9fd4181921fcb933d270f5edbcb02d\firebase-auth-19.2.0\AndroidManifest.xml:38:17-82
-82            <meta-data
-82-->[com.google.android.gms:play-services-measurement-api:17.2.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\9477b8b7d3dd4ca1c2a196af0518f2f2\play-services-measurement-api-17.2.1\AndroidManifest.xml:30:13-32:85
-83                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
-83-->[com.google.android.gms:play-services-measurement-api:17.2.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\9477b8b7d3dd4ca1c2a196af0518f2f2\play-services-measurement-api-17.2.1\AndroidManifest.xml:31:17-139
-84                android:value="com.google.firebase.components.ComponentRegistrar" />
-84-->[com.google.android.gms:play-services-measurement-api:17.2.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\9477b8b7d3dd4ca1c2a196af0518f2f2\play-services-measurement-api-17.2.1\AndroidManifest.xml:32:17-82
-85            <meta-data
-85-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\f1aa6e18467c20f571460c2bb43c33e5\firebase-iid-19.0.0\AndroidManifest.xml:32:13-34:85
-86                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
-86-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\f1aa6e18467c20f571460c2bb43c33e5\firebase-iid-19.0.0\AndroidManifest.xml:33:17-96
-87                android:value="com.google.firebase.components.ComponentRegistrar" />
-87-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\f1aa6e18467c20f571460c2bb43c33e5\firebase-iid-19.0.0\AndroidManifest.xml:34:17-82
-88        </service>
-89
-90        <activity
-90-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\db9fd4181921fcb933d270f5edbcb02d\firebase-auth-19.2.0\AndroidManifest.xml:24:9-31:50
-91            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
-91-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\db9fd4181921fcb933d270f5edbcb02d\firebase-auth-19.2.0\AndroidManifest.xml:25:13-85
-92            android:excludeFromRecents="true"
-92-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\db9fd4181921fcb933d270f5edbcb02d\firebase-auth-19.2.0\AndroidManifest.xml:26:13-46
-93            android:exported="true"
-93-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\db9fd4181921fcb933d270f5edbcb02d\firebase-auth-19.2.0\AndroidManifest.xml:27:13-36
-94            android:launchMode="singleTask"
-94-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\db9fd4181921fcb933d270f5edbcb02d\firebase-auth-19.2.0\AndroidManifest.xml:28:13-44
-95            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
-95-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\db9fd4181921fcb933d270f5edbcb02d\firebase-auth-19.2.0\AndroidManifest.xml:29:13-102
-96            android:theme="@android:style/Theme.Translucent.NoTitleBar" /> <!-- Needs to be explicitly declared on P+ -->
-96-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\db9fd4181921fcb933d270f5edbcb02d\firebase-auth-19.2.0\AndroidManifest.xml:30:13-72
-97        <uses-library
-97-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\ce0140cbce189ad45ea4f4fc550119d8\play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
-98            android:name="org.apache.http.legacy"
-98-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\ce0140cbce189ad45ea4f4fc550119d8\play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
-99            android:required="false" />
-99-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\ce0140cbce189ad45ea4f4fc550119d8\play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
-100
-101        <receiver
-101-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\efdfb2ff9ac9748ae74b5e83df955089\play-services-measurement-17.2.1\AndroidManifest.xml:29:9-33:20
-102            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-102-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\efdfb2ff9ac9748ae74b5e83df955089\play-services-measurement-17.2.1\AndroidManifest.xml:30:13-85
-103            android:enabled="true"
-103-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\efdfb2ff9ac9748ae74b5e83df955089\play-services-measurement-17.2.1\AndroidManifest.xml:31:13-35
-104            android:exported="false" >
-104-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\efdfb2ff9ac9748ae74b5e83df955089\play-services-measurement-17.2.1\AndroidManifest.xml:32:13-37
-105        </receiver>
-106        <receiver
-106-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\efdfb2ff9ac9748ae74b5e83df955089\play-services-measurement-17.2.1\AndroidManifest.xml:34:9-42:20
-107            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
-107-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\efdfb2ff9ac9748ae74b5e83df955089\play-services-measurement-17.2.1\AndroidManifest.xml:35:13-100
-108            android:enabled="true"
-108-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\efdfb2ff9ac9748ae74b5e83df955089\play-services-measurement-17.2.1\AndroidManifest.xml:36:13-35
-109            android:exported="true"
-109-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\efdfb2ff9ac9748ae74b5e83df955089\play-services-measurement-17.2.1\AndroidManifest.xml:37:13-36
-110            android:permission="android.permission.INSTALL_PACKAGES" >
-110-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\efdfb2ff9ac9748ae74b5e83df955089\play-services-measurement-17.2.1\AndroidManifest.xml:38:13-69
-111            <intent-filter>
-111-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\efdfb2ff9ac9748ae74b5e83df955089\play-services-measurement-17.2.1\AndroidManifest.xml:39:13-41:29
-112                <action android:name="com.android.vending.INSTALL_REFERRER" />
-112-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\efdfb2ff9ac9748ae74b5e83df955089\play-services-measurement-17.2.1\AndroidManifest.xml:40:17-79
-112-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\efdfb2ff9ac9748ae74b5e83df955089\play-services-measurement-17.2.1\AndroidManifest.xml:40:25-76
-113            </intent-filter>
-114        </receiver>
-115
-116        <service
-116-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\efdfb2ff9ac9748ae74b5e83df955089\play-services-measurement-17.2.1\AndroidManifest.xml:44:9-47:40
-117            android:name="com.google.android.gms.measurement.AppMeasurementService"
-117-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\efdfb2ff9ac9748ae74b5e83df955089\play-services-measurement-17.2.1\AndroidManifest.xml:45:13-84
-118            android:enabled="true"
-118-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\efdfb2ff9ac9748ae74b5e83df955089\play-services-measurement-17.2.1\AndroidManifest.xml:46:13-35
-119            android:exported="false" />
-119-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\efdfb2ff9ac9748ae74b5e83df955089\play-services-measurement-17.2.1\AndroidManifest.xml:47:13-37
-120        <service
-120-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\efdfb2ff9ac9748ae74b5e83df955089\play-services-measurement-17.2.1\AndroidManifest.xml:48:9-52:72
-121            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-121-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\efdfb2ff9ac9748ae74b5e83df955089\play-services-measurement-17.2.1\AndroidManifest.xml:49:13-87
-122            android:enabled="true"
-122-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\efdfb2ff9ac9748ae74b5e83df955089\play-services-measurement-17.2.1\AndroidManifest.xml:50:13-35
-123            android:exported="false"
-123-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\efdfb2ff9ac9748ae74b5e83df955089\play-services-measurement-17.2.1\AndroidManifest.xml:51:13-37
-124            android:permission="android.permission.BIND_JOB_SERVICE" />
-124-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\efdfb2ff9ac9748ae74b5e83df955089\play-services-measurement-17.2.1\AndroidManifest.xml:52:13-69
-125
-126        <receiver
-126-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\f1aa6e18467c20f571460c2bb43c33e5\firebase-iid-19.0.0\AndroidManifest.xml:37:9-44:20
-127            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
-127-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\f1aa6e18467c20f571460c2bb43c33e5\firebase-iid-19.0.0\AndroidManifest.xml:38:13-78
-128            android:exported="true"
-128-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\f1aa6e18467c20f571460c2bb43c33e5\firebase-iid-19.0.0\AndroidManifest.xml:39:13-36
-129            android:permission="com.google.android.c2dm.permission.SEND" >
-129-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\f1aa6e18467c20f571460c2bb43c33e5\firebase-iid-19.0.0\AndroidManifest.xml:40:13-73
-130            <intent-filter>
-130-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\f1aa6e18467c20f571460c2bb43c33e5\firebase-iid-19.0.0\AndroidManifest.xml:41:13-43:29
-131                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-131-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\f1aa6e18467c20f571460c2bb43c33e5\firebase-iid-19.0.0\AndroidManifest.xml:42:17-81
-131-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\f1aa6e18467c20f571460c2bb43c33e5\firebase-iid-19.0.0\AndroidManifest.xml:42:25-78
-132            </intent-filter>
-133        </receiver>
-134
-135        <provider
-135-->[com.google.firebase:firebase-common:19.3.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\942c2a5886ce54d64edefbe8cc91c73d\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
-136            android:name="com.google.firebase.provider.FirebaseInitProvider"
-136-->[com.google.firebase:firebase-common:19.3.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\942c2a5886ce54d64edefbe8cc91c73d\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
-137            android:authorities="com.example.familyconnectionapp.firebaseinitprovider"
-137-->[com.google.firebase:firebase-common:19.3.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\942c2a5886ce54d64edefbe8cc91c73d\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
-138            android:exported="false"
-138-->[com.google.firebase:firebase-common:19.3.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\942c2a5886ce54d64edefbe8cc91c73d\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
-139            android:initOrder="100" />
-139-->[com.google.firebase:firebase-common:19.3.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\942c2a5886ce54d64edefbe8cc91c73d\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
-140
-141        <activity
-141-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\fc9a8d5df99331dac9a5fdc49a7080c6\play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
-142            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-142-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\fc9a8d5df99331dac9a5fdc49a7080c6\play-services-base-17.1.0\AndroidManifest.xml:24:13-79
-143            android:exported="false"
-143-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\fc9a8d5df99331dac9a5fdc49a7080c6\play-services-base-17.1.0\AndroidManifest.xml:25:13-37
-144            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-144-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\fc9a8d5df99331dac9a5fdc49a7080c6\play-services-base-17.1.0\AndroidManifest.xml:26:13-72
-145
-146        <provider
-146-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\47ecb745954fd894e9c5d4c2264ee606\lifecycle-process-2.1.0\AndroidManifest.xml:23:9-27:43
-147            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-147-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\47ecb745954fd894e9c5d4c2264ee606\lifecycle-process-2.1.0\AndroidManifest.xml:24:13-79
-148            android:authorities="com.example.familyconnectionapp.lifecycle-process"
-148-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\47ecb745954fd894e9c5d4c2264ee606\lifecycle-process-2.1.0\AndroidManifest.xml:25:13-69
-149            android:exported="false"
-149-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\47ecb745954fd894e9c5d4c2264ee606\lifecycle-process-2.1.0\AndroidManifest.xml:26:13-37
-150            android:multiprocess="true" />
-150-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\47ecb745954fd894e9c5d4c2264ee606\lifecycle-process-2.1.0\AndroidManifest.xml:27:13-40
-151    </application>
-152
-153</manifest>
+34        android:testOnly="true"
+35        android:theme="@style/AppTheme" >
+35-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:17:9-40
+36        <activity android:name="com.example.familyconnectionapp.ListJoinedActivity" />
+36-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:18:9-65
+36-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:18:19-53
+37        <activity android:name="com.example.familyconnectionapp.JoinCircleActivity" />
+37-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:19:9-56
+37-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:19:19-53
+38        <activity android:name="com.example.familyconnectionapp.CreateCodeActivity" />
+38-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:20:9-56
+38-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:20:19-53
+39        <activity android:name="com.example.familyconnectionapp.ListUserActivity" />
+39-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:21:9-54
+39-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:21:19-51
+40        <activity android:name="com.example.familyconnectionapp.MapActivity" />
+40-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:22:9-49
+40-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:22:19-46
+41        <activity android:name="com.example.familyconnectionapp.LocationActivity" />
+41-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:24:9-54
+41-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:24:19-51
+42
+43        <meta-data
+43-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:26:9-28:69
+44            android:name="com.google.android.gms.version"
+44-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:27:13-58
+45            android:value="@integer/google_play_services_version" />
+45-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:28:13-66
+46        <meta-data
+46-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:29:9-31:51
+47            android:name="com.google.android.maps.v2.API_KEY"
+47-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:30:13-62
+48            android:value="@string/map_api_key" />
+48-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:31:13-48
+49        <meta-data
+49-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:26:9-28:69
+50            android:name="com.google.android.gms.version"
+50-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:27:13-58
+51            android:value="@integer/google_play_services_version" />
+51-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:28:13-66
+52
+53        <activity
+53-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:36:9-39:20
+54            android:name="com.example.familyconnectionapp.MenuActivity"
+54-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:37:13-41
+55            android:label="@string/title_activity_menu"
+55-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:38:13-56
+56            android:theme="@style/AppTheme.NoActionBar" >
+56-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:38:57-100
+57        </activity>
+58        <activity android:name="com.example.familyconnectionapp.RegisterActivity" />
+58-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:41:9-54
+58-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:41:19-51
+59        <activity android:name="com.example.familyconnectionapp.LoginActivity" />
+59-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:42:9-51
+59-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:42:19-48
+60        <activity
+60-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:43:9-48:20
+61            android:name="com.example.familyconnectionapp.MainActivity"
+61-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:43:19-47
+62            android:theme="@style/AppTheme.NoActionBar" >
+62-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:43:48-91
+63            <intent-filter>
+63-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:44:13-47:29
+64                <action android:name="android.intent.action.MAIN" />
+64-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:45:17-69
+64-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:45:25-66
+65
+66                <category android:name="android.intent.category.LAUNCHER" />
+66-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:46:17-77
+66-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:46:27-74
+67            </intent-filter>
+68        </activity>
+69
+70        <service
+70-->[com.google.firebase:firebase-database:19.2.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\f10127e9d8318f4d4750b9e91ab15d15\firebase-database-19.2.0\AndroidManifest.xml:29:9-35:19
+71            android:name="com.google.firebase.components.ComponentDiscoveryService"
+71-->[com.google.firebase:firebase-database:19.2.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\f10127e9d8318f4d4750b9e91ab15d15\firebase-database-19.2.0\AndroidManifest.xml:30:13-84
+72            android:directBootAware="true"
+72-->[com.google.firebase:firebase-common:19.3.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\942c2a5886ce54d64edefbe8cc91c73d\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
+73            android:exported="false" >
+73-->[com.google.firebase:firebase-database:19.2.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\f10127e9d8318f4d4750b9e91ab15d15\firebase-database-19.2.0\AndroidManifest.xml:31:13-37
+74            <meta-data
+74-->[com.google.firebase:firebase-database:19.2.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\f10127e9d8318f4d4750b9e91ab15d15\firebase-database-19.2.0\AndroidManifest.xml:32:13-34:85
+75                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+75-->[com.google.firebase:firebase-database:19.2.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\f10127e9d8318f4d4750b9e91ab15d15\firebase-database-19.2.0\AndroidManifest.xml:33:17-109
+76                android:value="com.google.firebase.components.ComponentRegistrar" />
+76-->[com.google.firebase:firebase-database:19.2.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\f10127e9d8318f4d4750b9e91ab15d15\firebase-database-19.2.0\AndroidManifest.xml:34:17-82
+77            <meta-data
+77-->[com.google.firebase:firebase-firestore:21.3.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\0a58bdb33624a74b8a717e03be3f0ba0\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:20:13-22:85
+78                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+78-->[com.google.firebase:firebase-firestore:21.3.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\0a58bdb33624a74b8a717e03be3f0ba0\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:21:17-111
+79                android:value="com.google.firebase.components.ComponentRegistrar" />
+79-->[com.google.firebase:firebase-firestore:21.3.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\0a58bdb33624a74b8a717e03be3f0ba0\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:22:17-82
+80            <meta-data
+80-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\db9fd4181921fcb933d270f5edbcb02d\firebase-auth-19.2.0\AndroidManifest.xml:36:13-38:85
+81                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+81-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\db9fd4181921fcb933d270f5edbcb02d\firebase-auth-19.2.0\AndroidManifest.xml:37:17-109
+82                android:value="com.google.firebase.components.ComponentRegistrar" />
+82-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\db9fd4181921fcb933d270f5edbcb02d\firebase-auth-19.2.0\AndroidManifest.xml:38:17-82
+83            <meta-data
+83-->[com.google.android.gms:play-services-measurement-api:17.2.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\9477b8b7d3dd4ca1c2a196af0518f2f2\play-services-measurement-api-17.2.1\AndroidManifest.xml:30:13-32:85
+84                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+84-->[com.google.android.gms:play-services-measurement-api:17.2.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\9477b8b7d3dd4ca1c2a196af0518f2f2\play-services-measurement-api-17.2.1\AndroidManifest.xml:31:17-139
+85                android:value="com.google.firebase.components.ComponentRegistrar" />
+85-->[com.google.android.gms:play-services-measurement-api:17.2.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\9477b8b7d3dd4ca1c2a196af0518f2f2\play-services-measurement-api-17.2.1\AndroidManifest.xml:32:17-82
+86            <meta-data
+86-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\f1aa6e18467c20f571460c2bb43c33e5\firebase-iid-19.0.0\AndroidManifest.xml:32:13-34:85
+87                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+87-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\f1aa6e18467c20f571460c2bb43c33e5\firebase-iid-19.0.0\AndroidManifest.xml:33:17-96
+88                android:value="com.google.firebase.components.ComponentRegistrar" />
+88-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\f1aa6e18467c20f571460c2bb43c33e5\firebase-iid-19.0.0\AndroidManifest.xml:34:17-82
+89        </service>
+90
+91        <activity
+91-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\db9fd4181921fcb933d270f5edbcb02d\firebase-auth-19.2.0\AndroidManifest.xml:24:9-31:50
+92            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+92-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\db9fd4181921fcb933d270f5edbcb02d\firebase-auth-19.2.0\AndroidManifest.xml:25:13-85
+93            android:excludeFromRecents="true"
+93-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\db9fd4181921fcb933d270f5edbcb02d\firebase-auth-19.2.0\AndroidManifest.xml:26:13-46
+94            android:exported="true"
+94-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\db9fd4181921fcb933d270f5edbcb02d\firebase-auth-19.2.0\AndroidManifest.xml:27:13-36
+95            android:launchMode="singleTask"
+95-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\db9fd4181921fcb933d270f5edbcb02d\firebase-auth-19.2.0\AndroidManifest.xml:28:13-44
+96            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+96-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\db9fd4181921fcb933d270f5edbcb02d\firebase-auth-19.2.0\AndroidManifest.xml:29:13-102
+97            android:theme="@android:style/Theme.Translucent.NoTitleBar" /> <!-- Needs to be explicitly declared on P+ -->
+97-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\db9fd4181921fcb933d270f5edbcb02d\firebase-auth-19.2.0\AndroidManifest.xml:30:13-72
+98        <uses-library
+98-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\ce0140cbce189ad45ea4f4fc550119d8\play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
+99            android:name="org.apache.http.legacy"
+99-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\ce0140cbce189ad45ea4f4fc550119d8\play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
+100            android:required="false" />
+100-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\ce0140cbce189ad45ea4f4fc550119d8\play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
+101
+102        <receiver
+102-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\efdfb2ff9ac9748ae74b5e83df955089\play-services-measurement-17.2.1\AndroidManifest.xml:29:9-33:20
+103            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+103-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\efdfb2ff9ac9748ae74b5e83df955089\play-services-measurement-17.2.1\AndroidManifest.xml:30:13-85
+104            android:enabled="true"
+104-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\efdfb2ff9ac9748ae74b5e83df955089\play-services-measurement-17.2.1\AndroidManifest.xml:31:13-35
+105            android:exported="false" >
+105-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\efdfb2ff9ac9748ae74b5e83df955089\play-services-measurement-17.2.1\AndroidManifest.xml:32:13-37
+106        </receiver>
+107        <receiver
+107-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\efdfb2ff9ac9748ae74b5e83df955089\play-services-measurement-17.2.1\AndroidManifest.xml:34:9-42:20
+108            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+108-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\efdfb2ff9ac9748ae74b5e83df955089\play-services-measurement-17.2.1\AndroidManifest.xml:35:13-100
+109            android:enabled="true"
+109-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\efdfb2ff9ac9748ae74b5e83df955089\play-services-measurement-17.2.1\AndroidManifest.xml:36:13-35
+110            android:exported="true"
+110-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\efdfb2ff9ac9748ae74b5e83df955089\play-services-measurement-17.2.1\AndroidManifest.xml:37:13-36
+111            android:permission="android.permission.INSTALL_PACKAGES" >
+111-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\efdfb2ff9ac9748ae74b5e83df955089\play-services-measurement-17.2.1\AndroidManifest.xml:38:13-69
+112            <intent-filter>
+112-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\efdfb2ff9ac9748ae74b5e83df955089\play-services-measurement-17.2.1\AndroidManifest.xml:39:13-41:29
+113                <action android:name="com.android.vending.INSTALL_REFERRER" />
+113-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\efdfb2ff9ac9748ae74b5e83df955089\play-services-measurement-17.2.1\AndroidManifest.xml:40:17-79
+113-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\efdfb2ff9ac9748ae74b5e83df955089\play-services-measurement-17.2.1\AndroidManifest.xml:40:25-76
+114            </intent-filter>
+115        </receiver>
+116
+117        <service
+117-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\efdfb2ff9ac9748ae74b5e83df955089\play-services-measurement-17.2.1\AndroidManifest.xml:44:9-47:40
+118            android:name="com.google.android.gms.measurement.AppMeasurementService"
+118-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\efdfb2ff9ac9748ae74b5e83df955089\play-services-measurement-17.2.1\AndroidManifest.xml:45:13-84
+119            android:enabled="true"
+119-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\efdfb2ff9ac9748ae74b5e83df955089\play-services-measurement-17.2.1\AndroidManifest.xml:46:13-35
+120            android:exported="false" />
+120-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\efdfb2ff9ac9748ae74b5e83df955089\play-services-measurement-17.2.1\AndroidManifest.xml:47:13-37
+121        <service
+121-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\efdfb2ff9ac9748ae74b5e83df955089\play-services-measurement-17.2.1\AndroidManifest.xml:48:9-52:72
+122            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+122-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\efdfb2ff9ac9748ae74b5e83df955089\play-services-measurement-17.2.1\AndroidManifest.xml:49:13-87
+123            android:enabled="true"
+123-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\efdfb2ff9ac9748ae74b5e83df955089\play-services-measurement-17.2.1\AndroidManifest.xml:50:13-35
+124            android:exported="false"
+124-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\efdfb2ff9ac9748ae74b5e83df955089\play-services-measurement-17.2.1\AndroidManifest.xml:51:13-37
+125            android:permission="android.permission.BIND_JOB_SERVICE" />
+125-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\efdfb2ff9ac9748ae74b5e83df955089\play-services-measurement-17.2.1\AndroidManifest.xml:52:13-69
+126
+127        <receiver
+127-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\f1aa6e18467c20f571460c2bb43c33e5\firebase-iid-19.0.0\AndroidManifest.xml:37:9-44:20
+128            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+128-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\f1aa6e18467c20f571460c2bb43c33e5\firebase-iid-19.0.0\AndroidManifest.xml:38:13-78
+129            android:exported="true"
+129-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\f1aa6e18467c20f571460c2bb43c33e5\firebase-iid-19.0.0\AndroidManifest.xml:39:13-36
+130            android:permission="com.google.android.c2dm.permission.SEND" >
+130-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\f1aa6e18467c20f571460c2bb43c33e5\firebase-iid-19.0.0\AndroidManifest.xml:40:13-73
+131            <intent-filter>
+131-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\f1aa6e18467c20f571460c2bb43c33e5\firebase-iid-19.0.0\AndroidManifest.xml:41:13-43:29
+132                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+132-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\f1aa6e18467c20f571460c2bb43c33e5\firebase-iid-19.0.0\AndroidManifest.xml:42:17-81
+132-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\f1aa6e18467c20f571460c2bb43c33e5\firebase-iid-19.0.0\AndroidManifest.xml:42:25-78
+133            </intent-filter>
+134        </receiver>
+135
+136        <provider
+136-->[com.google.firebase:firebase-common:19.3.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\942c2a5886ce54d64edefbe8cc91c73d\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
+137            android:name="com.google.firebase.provider.FirebaseInitProvider"
+137-->[com.google.firebase:firebase-common:19.3.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\942c2a5886ce54d64edefbe8cc91c73d\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
+138            android:authorities="com.example.familyconnectionapp.firebaseinitprovider"
+138-->[com.google.firebase:firebase-common:19.3.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\942c2a5886ce54d64edefbe8cc91c73d\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
+139            android:exported="false"
+139-->[com.google.firebase:firebase-common:19.3.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\942c2a5886ce54d64edefbe8cc91c73d\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
+140            android:initOrder="100" />
+140-->[com.google.firebase:firebase-common:19.3.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\942c2a5886ce54d64edefbe8cc91c73d\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
+141
+142        <activity
+142-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\fc9a8d5df99331dac9a5fdc49a7080c6\play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+143            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+143-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\fc9a8d5df99331dac9a5fdc49a7080c6\play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+144            android:exported="false"
+144-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\fc9a8d5df99331dac9a5fdc49a7080c6\play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+145            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+145-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\fc9a8d5df99331dac9a5fdc49a7080c6\play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+146
+147        <provider
+147-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\47ecb745954fd894e9c5d4c2264ee606\lifecycle-process-2.1.0\AndroidManifest.xml:23:9-27:43
+148            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+148-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\47ecb745954fd894e9c5d4c2264ee606\lifecycle-process-2.1.0\AndroidManifest.xml:24:13-79
+149            android:authorities="com.example.familyconnectionapp.lifecycle-process"
+149-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\47ecb745954fd894e9c5d4c2264ee606\lifecycle-process-2.1.0\AndroidManifest.xml:25:13-69
+150            android:exported="false"
+150-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\47ecb745954fd894e9c5d4c2264ee606\lifecycle-process-2.1.0\AndroidManifest.xml:26:13-37
+151            android:multiprocess="true" />
+151-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\47ecb745954fd894e9c5d4c2264ee606\lifecycle-process-2.1.0\AndroidManifest.xml:27:13-40
+152    </application>
+153
+154</manifest>

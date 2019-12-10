@@ -70,61 +70,6 @@ public class LoginActivity extends AppCompatActivity {
 
                         // ...
                     });
-
-//            if (userInfo.email != null) {
-//                isExistAccount = true;
-//
-//                if (userInfo.email.equals(edtEmail.getText().toString())) {
-//                    isValidEmail = true;
-//
-//                    if (userInfo.password.equals(edtPassword.getText().toString())) {
-//                        isValidPassword = true;
-//                    }
-//                }
-//            }
-//
-//            if (!isExistAccount){
-//                AlertDialog.Builder alertBuilder = new AlertDialog.Builder(this);
-//                alertBuilder.setMessage("Account does not exists !");
-//                alertBuilder.setCancelable(true);
-//
-//                alertBuilder.setPositiveButton(
-//                        "Ok",
-//                        (dialog, id) -> dialog.cancel()
-//                );
-//
-//                AlertDialog alert = alertBuilder.create();
-//                alert.show();
-//            }
-//            else if (!isValidEmail) {
-//                    AlertDialog.Builder alertBuilder = new AlertDialog.Builder(this);
-//                    alertBuilder.setMessage("Email invalid !");
-//                    alertBuilder.setCancelable(true);
-//
-//                    alertBuilder.setPositiveButton(
-//                            "Ok",
-//                            (dialog, id) -> dialog.cancel()
-//                    );
-//
-//                    AlertDialog alert = alertBuilder.create();
-//                    alert.show();
-//            }
-//            else if (!isValidPassword) {
-//                AlertDialog.Builder alertBuilder = new AlertDialog.Builder(this);
-//                alertBuilder.setMessage("Password invalid !");
-//                alertBuilder.setCancelable(true);
-//
-//                alertBuilder.setPositiveButton(
-//                        "Ok",
-//                        (dialog, id) -> dialog.cancel()
-//                );
-//
-//                AlertDialog alert = alertBuilder.create();
-//                alert.show();
-//            }
-//            else{
-//                startActivity(intent);
-//            }
         });
     }
 }

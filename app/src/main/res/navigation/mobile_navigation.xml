@@ -7,21 +7,21 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.example.familyconnectionapp.ui.myLocation.HomeFragment"
+        android:name="com.example.familyconnectionapp.ui.myLocation.MyLocationFragment"
         android:label="@string/menu_myLocation"
-        tools:layout="@layout/fragment_myLocation" />
+        tools:layout="@layout/fragment_my_location" />
 
     <fragment
         android:id="@+id/nav_gallery"
-        android:name="com.example.familyconnectionapp.ui.gallery.GalleryFragment"
+        android:name="com.example.familyconnectionapp.ui.myCircle.MyCircleFragment"
         android:label="@string/menu_myCircle"
-        tools:layout="@layout/fragment_gallery" />
+        tools:layout="@layout/fragment_my_circle" />
 
     <fragment
         android:id="@+id/nav_slideshow"
-        android:name="com.example.familyconnectionapp.ui.slideshow.SlideshowFragment"
+        android:name="com.example.familyconnectionapp.ui.joinCircle.JoinCircleFragment"
         android:label="@string/menu_joinCircle"
-        tools:layout="@layout/fragment_slideshow" />
+        tools:layout="@layout/fragment_join_circle" />
 
     <fragment
         android:id="@+id/nav_tools"
@@ -31,7 +31,7 @@
 
     <fragment
         android:id="@+id/nav_send"
-        android:name="com.example.familyconnectionapp.ui.send.SendFragment"
+        android:name="com.example.familyconnectionapp.ui.joinedCircle.JoinedCircleFragment"
         android:label="@string/menu_signOut"
-        tools:layout="@layout/fragment_send" />
+        tools:layout="@layout/fragment_joined_circle" />
 </navigation>

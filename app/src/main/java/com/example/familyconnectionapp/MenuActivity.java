@@ -3,8 +3,10 @@ package com.example.familyconnectionapp;
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.example.familyconnectionapp.ui.gallery.GalleryFragment;
-import com.example.familyconnectionapp.ui.myLocation.HomeFragment;
+import com.example.familyconnectionapp.ui.joinCircle.JoinCircleFragment;
+import com.example.familyconnectionapp.ui.joinedCircle.JoinedCircleFragment;
+import com.example.familyconnectionapp.ui.myCircle.MyCircleFragment;
+import com.example.familyconnectionapp.ui.myLocation.MyLocationFragment;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
@@ -39,9 +41,9 @@ public class MenuActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         ActionBar actionBar = getSupportActionBar();
 
-        HomeFragment homeFragment = new HomeFragment();
+        MyLocationFragment myLocationFragment = new MyLocationFragment();
         FragmentManager fragmentManager = getSupportFragmentManager();
-        fragmentManager.beginTransaction().add(R.id.nav_host_fragment, homeFragment, "nav_host_fragment").commit();
+        fragmentManager.beginTransaction().add(R.id.nav_host_fragment, myLocationFragment, "nav_host_fragment").commit();
 
 
         FloatingActionButton fab = findViewById(R.id.fab);
@@ -76,27 +78,22 @@ public class MenuActivity extends AppCompatActivity {
 
                     int i = menuItem.getItemId();
 
-                    if(i==R.id.nav_home) {
-
-                        fragment = new HomeFragment();
-
-                    }else if(i==R.id.nav_gallery)
-                    {
-
-                        fragment = new GalleryFragment();
-
-                    }else if(i==R.id.nav_slideshow)
-                    {
-                        Intent intent = new Intent(MenuActivity.this, JoinCircleActivity.class);
-                        startActivity(intent);
+                    if(i==R.id.nav_myLocation) {
+                        fragment = new MyLocationFragment();
                     }
-                    else if(i==R.id.nav_tools)
+                    else if(i==R.id.nav_myCircle)
                     {
-                        Intent intent = new Intent(MenuActivity.this, ListJoinedActivity.class);
-                        startActivity(intent);
-
+                        fragment = new MyCircleFragment();
                     }
-                    else if(i==R.id.nav_send)
+                    else if(i==R.id.nav_joinCircle)
+                    {
+                        fragment = new JoinCircleFragment();
+                    }
+                    else if(i==R.id.nav_joinedCircle)
+                    {
+                        fragment = new JoinedCircleFragment();
+                    }
+                    else if(i==R.id.nav_signOut)
                     {
                         Intent intent = new Intent(MenuActivity.this, LoginActivity.class);
                         startActivity(intent);
