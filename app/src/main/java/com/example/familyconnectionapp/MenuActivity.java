@@ -41,9 +41,9 @@ public class MenuActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         ActionBar actionBar = getSupportActionBar();
 
-        MyLocationFragment myLocationFragment = new MyLocationFragment();
+        LocationSettingsFragment locationSettingsFragment = new LocationSettingsFragment();
         FragmentManager fragmentManager = getSupportFragmentManager();
-        fragmentManager.beginTransaction().add(R.id.nav_host_fragment, myLocationFragment, "nav_host_fragment").commit();
+        fragmentManager.beginTransaction().add(R.id.nav_host_fragment, locationSettingsFragment, "nav_host_fragment").commit();
 
 
         FloatingActionButton fab = findViewById(R.id.fab);
@@ -79,7 +79,7 @@ public class MenuActivity extends AppCompatActivity {
                     int i = menuItem.getItemId();
 
                     if(i==R.id.nav_myLocation) {
-                        fragment = new MyLocationFragment();
+                        fragment = new LocationSettingsFragment();
                     }
                     else if(i==R.id.nav_myCircle)
                     {

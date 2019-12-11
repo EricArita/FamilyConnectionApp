@@ -1,9 +1,10 @@
 package com.example.familyconnectionapp;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
+import androidx.annotation.Nullable;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
+import androidx.fragment.app.Fragment;
 
 import android.Manifest;
 import android.content.Intent;
@@ -12,6 +13,9 @@ import android.location.Location;
 import android.location.LocationManager;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Switch;
 import android.widget.TextView;
@@ -23,10 +27,13 @@ import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationServices;
+import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.Locale;
 
-public class LocationActivity extends AppCompatActivity implements GoogleApiClient.ConnectionCallbacks,
+import static android.content.Context.LOCATION_SERVICE;
+
+public class LocationSettingsFragment extends Fragment implements GoogleApiClient.ConnectionCallbacks,
         GoogleApiClient.OnConnectionFailedListener, LocationListener {
     public static final String TAG = MainActivity.class.getSimpleName();
     private static final long UPDATE_INTERVAL = 5000;
@@ -42,10 +49,13 @@ public class LocationActivity extends AppCompatActivity implements GoogleApiClie
     private Button mBtnGetLocation;
     private Switch mSwAutoUpdateLocation;
 
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
+        return inflater.inflate(R.layout.fragment_location_settings, container, false);
+    }
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_location_settings);
         Log.d(TAG, "onCreate");
         initViews();
 
@@ -66,21 +76,21 @@ public class LocationActivity extends AppCompatActivity implements GoogleApiClie
                 bundle.putDouble("vido", mLastLocation.getLatitude());
 
                 FirebaseOperation crudFirebase = new FirebaseOperation();
-                Intent intent1 = getIntent();
-                crudFirebase.updateUser(intent1.getStringExtra("userId"), mLastLocation.getLatitude(), mLastLocation.getLongitude());
+                FirebaseAuth mAuth = FirebaseAuth.getInstance();
+                crudFirebase.updateUser(mAuth.getCurrentUser().getUid(), mLastLocation.getLatitude(), mLastLocation.getLongitude());
 
-                Intent intent = new Intent(LocationActivity.this, MapActivity.class);
+                Intent intent = new Intent(getActivity(), MapActivity.class);
                 intent.putExtra("dulieu", bundle);
                 startActivity(intent);
             } else {
-                Toast.makeText(LocationActivity.this, "GPS is OFF", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), "GPS is OFF", Toast.LENGTH_SHORT).show();
             }
         });
 
         mSwAutoUpdateLocation.setOnCheckedChangeListener(
                 (buttonView, isChecked) -> {
                     if (!isGpsOn()) {
-                        Toast.makeText(LocationActivity.this, "GPS is OFF",
+                        Toast.makeText(getActivity(), "GPS is OFF",
                                 Toast.LENGTH_SHORT).show();
                         mSwAutoUpdateLocation.setChecked(false);
                         return;
@@ -93,13 +103,13 @@ public class LocationActivity extends AppCompatActivity implements GoogleApiClie
                         stopLocationUpdates();
                     }
                 }
-         );
+        );
     }
 
     private void initViews() {
-        mTvCurrentLocation = (TextView) findViewById(R.id.tv_current_location);
-        mBtnGetLocation = (Button) findViewById(R.id.btn_get_location);
-        mSwAutoUpdateLocation = (Switch) findViewById(R.id.sw_auto_update_location);
+        mTvCurrentLocation = (TextView) getView().findViewById(R.id.tv_current_location);
+        mBtnGetLocation = (Button) getView().findViewById(R.id.btn_get_location);
+        mSwAutoUpdateLocation = (Switch) getView().findViewById(R.id.sw_auto_update_location);
     }
 
     private void updateUi() {
@@ -110,9 +120,9 @@ public class LocationActivity extends AppCompatActivity implements GoogleApiClie
     }
 
     private void requestLocationPermissions() {
-        if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
+        if (ContextCompat.checkSelfPermission(getActivity(), Manifest.permission.ACCESS_FINE_LOCATION)
                 != PackageManager.PERMISSION_GRANTED) {
-            ActivityCompat.requestPermissions(this,
+            ActivityCompat.requestPermissions(getActivity(),
                     new String[]{Manifest.permission.ACCESS_FINE_LOCATION},
                     REQUEST_LOCATION_PERMISSION);
         }
@@ -136,18 +146,18 @@ public class LocationActivity extends AppCompatActivity implements GoogleApiClie
     }
 
     private boolean isPlayServicesAvailable() {
-        return GoogleApiAvailability.getInstance().isGooglePlayServicesAvailable(this)
+        return GoogleApiAvailability.getInstance().isGooglePlayServicesAvailable(getActivity())
                 == ConnectionResult.SUCCESS;
     }
 
     private boolean isGpsOn() {
-        LocationManager manager = (LocationManager) getSystemService(LOCATION_SERVICE);
+        LocationManager manager = (LocationManager) getActivity().getSystemService(LOCATION_SERVICE);
         return manager.isProviderEnabled(LocationManager.GPS_PROVIDER);
     }
 
     private void setUpLocationClientIfNeeded() {
         if (mGoogleApiClient == null) {
-            mGoogleApiClient = new GoogleApiClient.Builder(this)
+            mGoogleApiClient = new GoogleApiClient.Builder(getActivity())
                     .addConnectionCallbacks(this)
                     .addOnConnectionFailedListener(this)
                     .addApi(LocationServices.API)
@@ -163,8 +173,8 @@ public class LocationActivity extends AppCompatActivity implements GoogleApiClie
     }
 
     protected void startLocationUpdates() {
-        if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
-                != PackageManager.PERMISSION_GRANTED && ContextCompat.checkSelfPermission(this,
+        if (ContextCompat.checkSelfPermission(getActivity(), Manifest.permission.ACCESS_FINE_LOCATION)
+                != PackageManager.PERMISSION_GRANTED && ContextCompat.checkSelfPermission(getActivity(),
                 Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             return;
         }
@@ -177,7 +187,7 @@ public class LocationActivity extends AppCompatActivity implements GoogleApiClie
     }
 
     @Override
-    protected void onStart() {
+    public void onStart() {
         super.onStart();
         if (mGoogleApiClient != null) {
             mGoogleApiClient.connect();
@@ -185,7 +195,7 @@ public class LocationActivity extends AppCompatActivity implements GoogleApiClie
     }
 
     @Override
-    protected void onStop() {
+    public void onStop() {
         if (mGoogleApiClient != null) {
             mGoogleApiClient.disconnect();
         }
@@ -194,8 +204,8 @@ public class LocationActivity extends AppCompatActivity implements GoogleApiClie
 
     @Override
     public void onConnected(Bundle bundle) {
-        if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
-                != PackageManager.PERMISSION_GRANTED && ContextCompat.checkSelfPermission(this,
+        if (ContextCompat.checkSelfPermission(getActivity(), Manifest.permission.ACCESS_FINE_LOCATION)
+                != PackageManager.PERMISSION_GRANTED && ContextCompat.checkSelfPermission(getActivity(),
                 Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             return;
         }

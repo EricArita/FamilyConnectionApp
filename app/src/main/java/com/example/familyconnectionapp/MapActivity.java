@@ -20,19 +20,20 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
     Bundle bundle;
     public static Double lng;
     public static Double lat;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_map);
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+
         bundle=new Bundle();
         Intent intent = getIntent();
         bundle = intent.getBundleExtra("dulieu");
         if(bundle!=null) {
-
-
             lat = bundle.getDouble("vido");
             lng = bundle.getDouble("kinhdo");
 
@@ -59,7 +60,5 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
             mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
             mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
         }
-
-
     }
 }
