@@ -230,10 +230,10 @@ activity#com.example.familyconnectionapp.CreateCodeActivity
 ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:20:9-56
 	android:name
 		ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:20:19-53
-activity#com.example.familyconnectionapp.ListUserActivity
-ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:21:9-54
+activity#com.example.familyconnectionapp.ListCircleMembersActivity
+ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:21:9-63
 	android:name
-		ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:21:19-51
+		ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:21:19-60
 activity#com.example.familyconnectionapp.MapActivity
 ADDED from D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:22:9-49
 	android:name

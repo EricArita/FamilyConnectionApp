@@ -66,7 +66,5 @@ public class JoinCircleActivity extends AppCompatActivity {
                 }
 
         });
-
-
     }
 }

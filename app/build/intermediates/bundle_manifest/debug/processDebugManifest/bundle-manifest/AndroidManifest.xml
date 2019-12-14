@@ -36,7 +36,7 @@
         <activity android:name="com.example.familyconnectionapp.ListJoinedActivity" />
         <activity android:name="com.example.familyconnectionapp.JoinCircleActivity" />
         <activity android:name="com.example.familyconnectionapp.CreateCodeActivity" />
-        <activity android:name="com.example.familyconnectionapp.ListUserActivity" />
+        <activity android:name="com.example.familyconnectionapp.ListCircleMembersActivity" />
         <activity android:name="com.example.familyconnectionapp.MapActivity" />
         <activity android:name="com.example.familyconnectionapp.LocationActivity" />
 

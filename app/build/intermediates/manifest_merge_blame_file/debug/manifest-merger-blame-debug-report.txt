@@ -71,9 +71,9 @@
 38        <activity android:name="com.example.familyconnectionapp.CreateCodeActivity" />
 38-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:20:9-56
 38-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:20:19-53
-39        <activity android:name="com.example.familyconnectionapp.ListUserActivity" />
-39-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:21:9-54
-39-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:21:19-51
+39        <activity android:name="com.example.familyconnectionapp.ListCircleMembersActivity" />
+39-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:21:9-63
+39-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:21:19-60
 40        <activity android:name="com.example.familyconnectionapp.MapActivity" />
 40-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:22:9-49
 40-->D:\Android(Java)\FamilyConnectionApp\app\src\main\AndroidManifest.xml:22:19-46

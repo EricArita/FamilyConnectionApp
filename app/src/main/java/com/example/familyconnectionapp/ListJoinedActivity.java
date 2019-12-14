@@ -24,8 +24,8 @@ public class ListJoinedActivity extends AppCompatActivity {
         list=new ArrayList<>();
         Intent intent1=getIntent();
 
-        String name = intent1.getStringExtra("code");
-        if(name.isEmpty()!=true) {
+        String name = "bmnbm";
+        if(name.isEmpty()) {
                 list.add(name);
         }
 
