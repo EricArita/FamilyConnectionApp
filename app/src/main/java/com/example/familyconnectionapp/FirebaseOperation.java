@@ -8,6 +8,9 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import static com.example.familyconnectionapp.LocationSettingsFragment.TAG;
 
 public class FirebaseOperation {
@@ -24,13 +27,34 @@ public class FirebaseOperation {
     public void createUserInfo(String userId, String name, String email, String password, String date, String circleCode, Boolean isSharing, Double lat, Double lng) {
         //String userId = dbReference.child("Users").push().getKey();
         UserModel user = new UserModel(userId, name, email, password, date, circleCode, isSharing, lat, lng);
-        dbReference.child(userId).setValue(user);
 
-        return;
+        try{
+            dbReference.child(userId).setValue(user);
+            dbReference.child(userId).child("CircleMembers").setValue("");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     public void getUserByCircleCode(String circleCode, MyCallback myCallback){
         dbReference.orderByChild("circleCode").equalTo(circleCode).addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                for(DataSnapshot snapshot: dataSnapshot.getChildren()) {
+                    user = snapshot.getValue(UserModel.class);
+                    myCallback.onCallback(user);
+                }
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+                Log.w(TAG, "getUser:onCancelled", databaseError.toException());
+            }
+        });
+    }
+
+    public void getUserById(String userId, MyCallback myCallback){
+        dbReference.orderByChild("userId").equalTo(userId).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 for(DataSnapshot snapshot: dataSnapshot.getChildren()) {
@@ -55,9 +79,10 @@ public class FirebaseOperation {
         }
     }
 
-    public void updateCircleMemebers(String updatedUserId, String currentUserId){
+    public void updateCircleMemebers(String updatedUserId, UserModel currentUser){
         try {
-            dbReference.child(updatedUserId).child("CircleMembers").child(currentUserId).child("memberId").setValue(currentUserId);
+            UserViewModel currUser = new UserViewModel(currentUser.userId, currentUser.name, currentUser.isSharing);
+            dbReference.child(updatedUserId).child("CircleMembers").child(currUser.userId).setValue(currUser);
         } catch (Exception e) {
             e.printStackTrace();
         }

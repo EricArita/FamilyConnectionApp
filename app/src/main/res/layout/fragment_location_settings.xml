@@ -5,6 +5,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LocationActivity">
+
+    <Switch
+        android:id="@+id/sw_auto_update_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_get_location"
+        android:layout_centerHorizontal="true"
+        android:switchPadding="20dp"
+        android:text="Update location automatically"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/tv_title"
         android:layout_width="wrap_content"
@@ -50,16 +65,18 @@
         app:layout_constraintVertical_bias="0.976" />
 
     <Switch
-        android:id="@+id/sw_auto_update_location"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/sw_share_location"
+        android:layout_width="250dp"
+        android:layout_height="36dp"
         android:layout_below="@id/btn_get_location"
         android:layout_centerHorizontal="true"
         android:switchPadding="20dp"
-        android:text="Update location automatically"
+        android:text="Share your location"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.582" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,14 +6,14 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/tvUserLine"
+        android:id="@+id/tvMemberName"
         android:layout_width="221dp"
         android:layout_height="50dp"
         android:text="TextView"
         android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
     <ImageView
-        android:id="@+id/imUserStatus"
+        android:id="@+id/imgUserStatus"
         android:layout_width="163dp"
         android:layout_height="50dp"
         android:layout_weight="1"

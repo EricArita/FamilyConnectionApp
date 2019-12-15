@@ -8,22 +8,24 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.google.firebase.firestore.auth.User;
+
 import java.util.List;
 
 public class AdapterUser extends BaseAdapter {
     private Context context;
     private int layout;
-    private List<User> UserListView;
+    private List<UserViewModel> userListView;
 
-    public AdapterUser(Context context, int layout, List<User> userListView) {
+    public AdapterUser(Context context, int layout, List<UserViewModel> userListView) {
         this.context = context;
         this.layout = layout;
-        UserListView = userListView;
+        this.userListView = userListView;
     }
 
     @Override
     public int getCount() {
-        return UserListView.size();
+        return userListView.size();
     }
 
     @Override
@@ -35,22 +37,25 @@ public class AdapterUser extends BaseAdapter {
     public long getItemId(int i) {
         return 0;
     }
+
     public class ViewHolder
     {
         TextView User;
         ImageView Status;
 
     }
+
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
         ViewHolder viewHolder;
+
         if(view==null)
         {
             viewHolder=new ViewHolder();
             LayoutInflater inflater= (LayoutInflater) context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
-            view=inflater.inflate(layout,null);
-            viewHolder.User=(TextView)view.findViewById(R.id.tvUserLine);
-            viewHolder.Status=(ImageView) view.findViewById(R.id.imUserStatus);
+            view = inflater.inflate(layout,null);
+            viewHolder.User = view.findViewById(R.id.tvMemberName);
+            viewHolder.Status = view.findViewById(R.id.imgUserStatus);
             view.setTag(viewHolder);
         }
         else
@@ -59,11 +64,10 @@ public class AdapterUser extends BaseAdapter {
         }
 
 
-        User user=UserListView.get(i);
+        UserViewModel user = userListView.get(i);
 
-        viewHolder.User.setText(user.getUser());
-        viewHolder.Status.setImageResource(user.getStatus());
-
+        viewHolder.User.setText(user.name);
+        viewHolder.Status.setImageResource(user.isSharing ? R.drawable.xanh : R.drawable.do1);
 
         return view;
     }

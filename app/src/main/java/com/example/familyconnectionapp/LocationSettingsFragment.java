@@ -44,10 +44,12 @@ public class LocationSettingsFragment extends Fragment implements GoogleApiClien
     private LocationRequest mLocationRequest;
     private Location mLastLocation;
     private boolean mIsAutoUpdateLocation;
+    private boolean mShareLocation;
 
     private TextView mTvCurrentLocation;
     private Button mBtnGetLocation;
     private Switch mSwAutoUpdateLocation;
+    private Switch mSwShareLocation;
 
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
         return inflater.inflate(R.layout.fragment_location_settings, container, false);
@@ -104,12 +106,31 @@ public class LocationSettingsFragment extends Fragment implements GoogleApiClien
                     }
                 }
         );
+
+        mSwShareLocation.setOnCheckedChangeListener(
+                (buttonView, isChecked) -> {
+                    if (!isGpsOn()) {
+                        Toast.makeText(getActivity(), "GPS is OFF",
+                                Toast.LENGTH_SHORT).show();
+                        mSwAutoUpdateLocation.setChecked(false);
+                        return;
+                    }
+
+                    mIsAutoUpdateLocation = isChecked;
+                    if (isChecked) {
+                        startLocationUpdates();
+                    } else {
+                        stopLocationUpdates();
+                    }
+                }
+        );
     }
 
     private void initViews() {
-        mTvCurrentLocation = (TextView) getView().findViewById(R.id.tv_current_location);
-        mBtnGetLocation = (Button) getView().findViewById(R.id.btn_get_location);
-        mSwAutoUpdateLocation = (Switch) getView().findViewById(R.id.sw_auto_update_location);
+        mTvCurrentLocation = getView().findViewById(R.id.tv_current_location);
+        mBtnGetLocation = getView().findViewById(R.id.btn_get_location);
+        mSwAutoUpdateLocation = getView().findViewById(R.id.sw_auto_update_location);
+        mSwShareLocation = getView().findViewById(R.id.sw_share_location);
     }
 
     private void updateUi() {

@@ -65,7 +65,10 @@ public class JoinCircleFragment extends Fragment {
                 Toast.makeText(getActivity(), "Please input number code", Toast.LENGTH_SHORT).show();
             }
             else{
-                firebaseOperation.getUserByCircleCode(circleCode, user -> firebaseOperation.updateCircleMemebers(user.userId, currentUserId));
+                firebaseOperation.getUserById(currentUserId, currUser -> {
+                    firebaseOperation.getUserByCircleCode(circleCode, user -> firebaseOperation.updateCircleMemebers(user.userId, currUser));
+                });
+
                 Intent intent =new Intent(getActivity(), MenuActivity.class);
                 startActivity(intent);
             }
