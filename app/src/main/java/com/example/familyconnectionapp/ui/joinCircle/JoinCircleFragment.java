@@ -66,7 +66,7 @@ public class JoinCircleFragment extends Fragment {
             }
             else{
                 firebaseOperation.getUserById(currentUserId, currUser -> {
-                    firebaseOperation.getUserByCircleCode(circleCode, user -> firebaseOperation.updateCircleMemebers(user.userId, currUser));
+                    firebaseOperation.getUserByCircleCode(circleCode, user -> firebaseOperation.updateCircleMemebers(user, currUser));
                 });
 
                 Intent intent =new Intent(getActivity(), MenuActivity.class);

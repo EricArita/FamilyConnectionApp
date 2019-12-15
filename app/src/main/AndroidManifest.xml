@@ -21,8 +21,6 @@
         <activity android:name=".ListCircleMembersActivity" />
         <activity android:name=".MapActivity" />
 
-        <activity android:name=".LocationActivity" />
-
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />

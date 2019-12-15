@@ -41,8 +41,6 @@ public class JoinCircleActivity extends AppCompatActivity {
         btSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-
                 String number1 = num1.getText().toString();
                 String number2 = num2.getText().toString();
                 String number3 = num3.getText().toString();
@@ -58,13 +56,13 @@ public class JoinCircleActivity extends AppCompatActivity {
 
                     Toast.makeText(JoinCircleActivity.this, "please input number code", Toast.LENGTH_SHORT).show();
                 }
-                    String code=number1+number2+number3+number4+number5+number6;
+
+                String code=number1+number2+number3+number4+number5+number6;
                 Intent intent =new Intent(JoinCircleActivity.this,ListJoinedActivity.class);
                 intent.putExtra("code",code);
                 startActivity(intent);
                   //chuoi code
-                }
-
+            }
         });
     }
 }

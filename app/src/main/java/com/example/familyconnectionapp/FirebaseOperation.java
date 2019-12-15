@@ -8,9 +8,6 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import static com.example.familyconnectionapp.LocationSettingsFragment.TAG;
 
 public class FirebaseOperation {
@@ -42,7 +39,12 @@ public class FirebaseOperation {
             public void onDataChange(DataSnapshot dataSnapshot) {
                 for(DataSnapshot snapshot: dataSnapshot.getChildren()) {
                     user = snapshot.getValue(UserModel.class);
-                    myCallback.onCallback(user);
+                    try{
+                        myCallback.onCallback(user);
+                    }
+                    catch (Throwable throwable){
+
+                    }
                 }
             }
 
@@ -59,7 +61,12 @@ public class FirebaseOperation {
             public void onDataChange(DataSnapshot dataSnapshot) {
                 for(DataSnapshot snapshot: dataSnapshot.getChildren()) {
                     user = snapshot.getValue(UserModel.class);
-                    myCallback.onCallback(user);
+                    try{
+                        myCallback.onCallback(user);
+                    }
+                    catch (Throwable throwable){
+
+                    }
                 }
             }
 
@@ -70,7 +77,7 @@ public class FirebaseOperation {
         });
     }
 
-    public void updateUser(String userId, Double lat, Double lng){
+    public void updateUserLocation(String userId, Double lat, Double lng){
         try {
             dbReference.child(userId).child("lat").setValue(lat);
             dbReference.child(userId).child("lng").setValue(lng);
@@ -79,10 +86,27 @@ public class FirebaseOperation {
         }
     }
 
-    public void updateCircleMemebers(String updatedUserId, UserModel currentUser){
+    public void setCircleMemberShareLocation(String userId, String memberId, boolean allowShareLocation){
         try {
-            UserViewModel currUser = new UserViewModel(currentUser.userId, currentUser.name, currentUser.isSharing);
-            dbReference.child(updatedUserId).child("CircleMembers").child(currUser.userId).setValue(currUser);
+            dbReference.child(userId).child("CircleMembers").child(memberId).child("isSharing").setValue(allowShareLocation);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void setShareLocation(String userId, boolean allowShareLocation){
+        try {
+            dbReference.child(userId).child("isSharing").setValue(allowShareLocation);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void updateCircleMemebers(UserModel updatedUser, UserModel currentUser){
+        try {
+            UserViewModel currUser = new UserViewModel(currentUser.userId, currentUser.name, currentUser.isSharing, currentUser.lng, currentUser.lat);
+            dbReference.child(updatedUser.userId).child("CircleMembers").child(currUser.userId).setValue(currUser);
+            dbReference.child(currentUser.userId).child("JoinedCircleList").child(updatedUser.userId).child("circleCode").setValue(updatedUser.circleCode);
         } catch (Exception e) {
             e.printStackTrace();
         }

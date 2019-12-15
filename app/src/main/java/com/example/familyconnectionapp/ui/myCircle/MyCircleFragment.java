@@ -24,6 +24,7 @@ import com.example.familyconnectionapp.UserViewModel;
 import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.ArrayList;
+import java.util.concurrent.TimeUnit;
 
 public class MyCircleFragment extends Fragment {
 
@@ -47,9 +48,19 @@ public class MyCircleFragment extends Fragment {
             usersArrayList =  new ArrayList<>(currUser.CircleMembers.values());
             lvUser = getActivity().findViewById(R.id.lvListUser);
 
-            AdapterUser adapterUser = new AdapterUser(getActivity(), R.layout.user_line, usersArrayList);
-            lvUser.setAdapter(adapterUser);
-            lvUser.setOnItemClickListener((parent, View, position, id) -> DialogLogin(position));
+            for(UserViewModel member : usersArrayList){
+                firebaseOperation.getUserById(member.userId, user -> {
+                    if (user.isSharing != member.isSharing){
+                        member.isSharing = user.isSharing;
+                        usersArrayList.set(usersArrayList.indexOf(member), member);
+                        firebaseOperation.setCircleMemberShareLocation(currentUserId, member.userId, user.isSharing);
+
+                        AdapterUser adapterUser = new AdapterUser(getActivity(), R.layout.user_line, usersArrayList);
+                        lvUser.setAdapter(adapterUser);
+                        lvUser.setOnItemClickListener((parent, View, position, id) -> DialogLogin(position));
+                    }
+                });
+            }
         });
     }
 

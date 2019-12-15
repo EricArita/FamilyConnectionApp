@@ -39,7 +39,6 @@
         <activity android:name="com.example.familyconnectionapp.CreateCodeActivity" />
         <activity android:name="com.example.familyconnectionapp.ListCircleMembersActivity" />
         <activity android:name="com.example.familyconnectionapp.MapActivity" />
-        <activity android:name="com.example.familyconnectionapp.LocationActivity" />
 
         <meta-data
             android:name="com.google.android.gms.version"

@@ -44,7 +44,9 @@ public class LocationSettingsFragment extends Fragment implements GoogleApiClien
     private LocationRequest mLocationRequest;
     private Location mLastLocation;
     private boolean mIsAutoUpdateLocation;
-    private boolean mShareLocation;
+    private boolean allowShareLocation;
+    private FirebaseOperation crudFirebase;
+    private FirebaseAuth mAuth;
 
     private TextView mTvCurrentLocation;
     private Button mBtnGetLocation;
@@ -60,6 +62,9 @@ public class LocationSettingsFragment extends Fragment implements GoogleApiClien
         super.onCreate(savedInstanceState);
         Log.d(TAG, "onCreate");
         initViews();
+
+        crudFirebase = new FirebaseOperation();
+        mAuth = FirebaseAuth.getInstance();
 
         requestLocationPermissions();
 
@@ -77,9 +82,7 @@ public class LocationSettingsFragment extends Fragment implements GoogleApiClien
                 bundle.putDouble("kinhdo", mLastLocation.getLongitude());
                 bundle.putDouble("vido", mLastLocation.getLatitude());
 
-                FirebaseOperation crudFirebase = new FirebaseOperation();
-                FirebaseAuth mAuth = FirebaseAuth.getInstance();
-                crudFirebase.updateUser(mAuth.getCurrentUser().getUid(), mLastLocation.getLatitude(), mLastLocation.getLongitude());
+                crudFirebase.updateUserLocation(mAuth.getCurrentUser().getUid(), mLastLocation.getLatitude(), mLastLocation.getLongitude());
 
                 Intent intent = new Intent(getActivity(), MapActivity.class);
                 intent.putExtra("dulieu", bundle);
@@ -109,18 +112,13 @@ public class LocationSettingsFragment extends Fragment implements GoogleApiClien
 
         mSwShareLocation.setOnCheckedChangeListener(
                 (buttonView, isChecked) -> {
-                    if (!isGpsOn()) {
-                        Toast.makeText(getActivity(), "GPS is OFF",
-                                Toast.LENGTH_SHORT).show();
-                        mSwAutoUpdateLocation.setChecked(false);
-                        return;
-                    }
+                    allowShareLocation = isChecked;
 
-                    mIsAutoUpdateLocation = isChecked;
-                    if (isChecked) {
-                        startLocationUpdates();
-                    } else {
-                        stopLocationUpdates();
+                    if (allowShareLocation) {
+                        crudFirebase.setShareLocation(mAuth.getCurrentUser().getUid(), true);
+                    }
+                    else {
+                        crudFirebase.setShareLocation(mAuth.getCurrentUser().getUid(), false);
                     }
                 }
         );
