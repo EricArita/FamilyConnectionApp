@@ -38,7 +38,6 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
             lng = bundle.getDouble("kinhdo");
 
             Toast.makeText(this, "" + lng, Toast.LENGTH_SHORT).show();
-
             Toast.makeText(this, "" + lat, Toast.LENGTH_SHORT).show();
         }
 

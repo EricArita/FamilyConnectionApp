@@ -1,4 +1,4 @@
-package com.example.familyconnectionapp;
+package com.example.familyconnectionapp.ui.myLocation;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -21,6 +21,10 @@ import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.familyconnectionapp.FirebaseOperation;
+import com.example.familyconnectionapp.MainActivity;
+import com.example.familyconnectionapp.MapActivity;
+import com.example.familyconnectionapp.R;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GoogleApiAvailability;
 import com.google.android.gms.common.api.GoogleApiClient;

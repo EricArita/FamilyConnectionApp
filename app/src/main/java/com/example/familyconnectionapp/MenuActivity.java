@@ -6,7 +6,7 @@ import android.os.Bundle;
 import com.example.familyconnectionapp.ui.joinCircle.JoinCircleFragment;
 import com.example.familyconnectionapp.ui.joinedCircle.JoinedCircleFragment;
 import com.example.familyconnectionapp.ui.myCircle.MyCircleFragment;
-import com.example.familyconnectionapp.ui.myLocation.MyLocationFragment;
+import com.example.familyconnectionapp.ui.myLocation.LocationSettingsFragment;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 

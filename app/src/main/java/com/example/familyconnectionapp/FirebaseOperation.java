@@ -8,7 +8,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-import static com.example.familyconnectionapp.LocationSettingsFragment.TAG;
+import static com.example.familyconnectionapp.ui.myLocation.LocationSettingsFragment.TAG;
 
 public class FirebaseOperation {
 
@@ -107,6 +107,26 @@ public class FirebaseOperation {
             UserViewModel currUser = new UserViewModel(currentUser.userId, currentUser.name, currentUser.isSharing, currentUser.lng, currentUser.lat);
             dbReference.child(updatedUser.userId).child("CircleMembers").child(currUser.userId).setValue(currUser);
             dbReference.child(currentUser.userId).child("JoinedCircleList").child(updatedUser.userId).child("circleCode").setValue(updatedUser.circleCode);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void deleteCircleMember(String currUserId, String memberId){
+        try{
+            dbReference.child(currUserId).child("CircleMembers").orderByChild("userId").equalTo(memberId).addListenerForSingleValueEvent(new ValueEventListener() {
+                @Override
+                public void onDataChange(DataSnapshot dataSnapshot) {
+                    for (DataSnapshot snapshot: dataSnapshot.getChildren()) {
+                        snapshot.getRef().removeValue();
+                    }
+                }
+
+                @Override
+                public void onCancelled(DatabaseError databaseError) {
+                    Log.e(TAG, "onCancelled", databaseError.toException());
+                }
+            });
         } catch (Exception e) {
             e.printStackTrace();
         }
