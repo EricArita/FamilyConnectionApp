@@ -103,6 +103,7 @@ public class MyCircleFragment extends Fragment {
 
             usersArrayList.remove(memberIndex);
             firebaseOperation.deleteCircleMember(currentUserId, member.userId);
+            firebaseOperation.deleteJoinedCircle(currentUserId, member.userId);
 
             AdapterUser adapterUser = new AdapterUser(getActivity(), R.layout.user_line, usersArrayList);
             lvUser.setAdapter(adapterUser);

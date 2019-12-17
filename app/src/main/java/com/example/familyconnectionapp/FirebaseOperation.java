@@ -27,7 +27,6 @@ public class FirebaseOperation {
 
         try{
             dbReference.child(userId).setValue(user);
-            dbReference.child(userId).child("CircleMembers").setValue("");
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -86,6 +85,11 @@ public class FirebaseOperation {
         }
     }
 
+    public void updateCircleMemberLocation(String userId, String memberId, Double lat, Double lng){
+        dbReference.child(userId).child("CircleMembers").child(memberId).child("lat").setValue(lat);
+        dbReference.child(userId).child("CircleMembers").child(memberId).child("lng").setValue(lng);
+    }
+
     public void setCircleMemberShareLocation(String userId, String memberId, boolean allowShareLocation){
         try {
             dbReference.child(userId).child("CircleMembers").child(memberId).child("isSharing").setValue(allowShareLocation);
@@ -115,6 +119,26 @@ public class FirebaseOperation {
     public void deleteCircleMember(String currUserId, String memberId){
         try{
             dbReference.child(currUserId).child("CircleMembers").orderByChild("userId").equalTo(memberId).addListenerForSingleValueEvent(new ValueEventListener() {
+                @Override
+                public void onDataChange(DataSnapshot dataSnapshot) {
+                    for (DataSnapshot snapshot: dataSnapshot.getChildren()) {
+                        snapshot.getRef().removeValue();
+                    }
+                }
+
+                @Override
+                public void onCancelled(DatabaseError databaseError) {
+                    Log.e(TAG, "onCancelled", databaseError.toException());
+                }
+            });
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void deleteJoinedCircle(String currUserId, String memberId){
+        try{
+            dbReference.child(memberId).child("JoinedCircleList").child(currUserId).addListenerForSingleValueEvent(new ValueEventListener() {
                 @Override
                 public void onDataChange(DataSnapshot dataSnapshot) {
                     for (DataSnapshot snapshot: dataSnapshot.getChildren()) {

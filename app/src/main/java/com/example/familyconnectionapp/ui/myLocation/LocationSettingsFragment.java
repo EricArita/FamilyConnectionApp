@@ -21,10 +21,13 @@ import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.familyconnectionapp.CircleModel;
 import com.example.familyconnectionapp.FirebaseOperation;
 import com.example.familyconnectionapp.MainActivity;
 import com.example.familyconnectionapp.MapActivity;
 import com.example.familyconnectionapp.R;
+import com.example.familyconnectionapp.UserModel;
+import com.example.familyconnectionapp.UserViewModel;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GoogleApiAvailability;
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -33,6 +36,7 @@ import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationServices;
 import com.google.firebase.auth.FirebaseAuth;
 
+import java.util.ArrayList;
 import java.util.Locale;
 
 import static android.content.Context.LOCATION_SERVICE;
@@ -51,6 +55,7 @@ public class LocationSettingsFragment extends Fragment implements GoogleApiClien
     private boolean allowShareLocation;
     private FirebaseOperation crudFirebase;
     private FirebaseAuth mAuth;
+    private UserModel currUser;
 
     private TextView mTvCurrentLocation;
     private Button mBtnGetLocation;
@@ -69,6 +74,7 @@ public class LocationSettingsFragment extends Fragment implements GoogleApiClien
 
         crudFirebase = new FirebaseOperation();
         mAuth = FirebaseAuth.getInstance();
+        crudFirebase.getUserById(mAuth.getCurrentUser().getUid(), u -> currUser = u);
 
         requestLocationPermissions();
 
@@ -245,11 +251,16 @@ public class LocationSettingsFragment extends Fragment implements GoogleApiClien
 
     @Override
     public void onLocationChanged(Location location) {
-        Log.d(TAG, String.format(Locale.getDefault(), "onLocationChanged : %f, %f",
-                location.getLatitude(), location.getLongitude()));
         mLastLocation = location;
         if (mIsAutoUpdateLocation) {
             updateUi();
+            crudFirebase.updateUserLocation(currUser.userId, mLastLocation.getLatitude(), mLastLocation.getLongitude());
+            ArrayList<CircleModel> joinedCircleList =  new ArrayList<>(currUser.JoinedCircleList.values());
+            for(CircleModel circle : joinedCircleList){
+               crudFirebase.getUserByCircleCode(circle.circleCode, user -> {
+                   crudFirebase.updateCircleMemberLocation(user.userId, currUser.userId, mLastLocation.getLatitude(), mLastLocation.getLongitude());
+               });
+            }
         }
     }
 

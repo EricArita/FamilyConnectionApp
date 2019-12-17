@@ -19,9 +19,9 @@ public class CreateCodeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_creat_code);
-        tvTitle=(TextView)findViewById(R.id.tvCodeTitle);
-        tvCode=(TextView)findViewById(R.id.tvCode);
-        btDone=(Button)findViewById(R.id.btDone);
+        tvTitle=findViewById(R.id.tvCodeTitle);
+        tvCode=findViewById(R.id.tvCode);
+        btDone=findViewById(R.id.btDone);
 
         tvTitle.setText("Share this code with the people you want in your circle");
 
@@ -29,18 +29,11 @@ public class CreateCodeActivity extends AppCompatActivity {
         tvCode.setText(intent.getStringExtra("code"));
         btDone.setText("Done");
         String userId = intent.getStringExtra("userId");
-        btDone.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent1=new Intent(CreateCodeActivity.this,MenuActivity.class);
-                intent1.putExtra("userId", userId);
-                startActivity(intent1);
+        btDone.setOnClickListener(v -> {
+            Intent intent1=new Intent(CreateCodeActivity.this, MenuActivity.class);
+            intent1.putExtra("userId", userId);
+            startActivity(intent1);
 
-            }
         });
-
-
-
-
     }
 }
