@@ -20,12 +20,10 @@ import com.example.familyconnectionapp.AdapterUser;
 import com.example.familyconnectionapp.FirebaseOperation;
 import com.example.familyconnectionapp.MapActivity;
 import com.example.familyconnectionapp.R;
-import com.example.familyconnectionapp.UserModel;
 import com.example.familyconnectionapp.UserViewModel;
 import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.ArrayList;
-import java.util.concurrent.TimeUnit;
 
 public class MyCircleFragment extends Fragment {
 

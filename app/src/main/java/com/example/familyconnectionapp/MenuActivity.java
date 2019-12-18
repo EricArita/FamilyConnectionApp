@@ -31,6 +31,7 @@ import android.widget.FrameLayout;
 public class MenuActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
+    private FragmentManager fragmentManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,13 +43,18 @@ public class MenuActivity extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
 
         LocationSettingsFragment locationSettingsFragment = new LocationSettingsFragment();
-        FragmentManager fragmentManager = getSupportFragmentManager();
+        fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction().add(R.id.nav_host_fragment, locationSettingsFragment, "nav_host_fragment").commit();
 
 
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(view -> Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show());
+        FloatingActionButton fab = findViewById(R.id.fabMessage);
+        fab.setOnClickListener(view -> {
+//            ChatFragment chatFragment = new ChatFragment();
+//            fragmentManager = getSupportFragmentManager();
+//            fragmentManager.beginTransaction().replace(R.id.nav_host_fragment, chatFragment, "nav_host_fragment").commit();
+              Intent intent = new Intent(this, ChatActivity.class);
+              startActivity(intent);
+        });
 
         final DrawerLayout drawerLayout = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
