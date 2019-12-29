@@ -1,14 +1,16 @@
 package com.example.familyconnectionapp;
 
 import android.content.Context;
+import android.graphics.Color;
+import android.text.Spannable;
+import android.text.SpannableString;
+import android.text.style.ForegroundColorSpan;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-import com.google.firebase.firestore.auth.User;
 
 import java.util.List;
 
@@ -42,6 +44,7 @@ public class AdapterUser extends BaseAdapter {
     {
         TextView User;
         ImageView Status;
+        ImageView SOS;
 
     }
 
@@ -66,10 +69,17 @@ public class AdapterUser extends BaseAdapter {
 
         UserViewModel user = userListView.get(i);
 
-        viewHolder.User.setText(user.name);
-        viewHolder.Status.setImageResource(user.isSharing ? R.drawable.xanh : R.drawable.do1);
+        if (user.SOS){
+            String text = user.name + "      " + "SOS";
+            Spannable spannable = new SpannableString(text);
+            spannable.setSpan(new ForegroundColorSpan(Color.RED), text.indexOf("SOS"), text.indexOf("SOS") + "SOS".length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+            viewHolder.User.setText(spannable);
+        }
+        else{
+            viewHolder.User.setText(user.name);
+            viewHolder.Status.setImageResource(user.isSharing ? R.drawable.sharing : R.drawable.unsharing);
+        }
 
         return view;
     }
-
 }

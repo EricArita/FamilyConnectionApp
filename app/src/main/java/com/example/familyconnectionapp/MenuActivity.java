@@ -8,7 +8,8 @@ import com.example.familyconnectionapp.ui.joinedCircle.JoinedCircleFragment;
 import com.example.familyconnectionapp.ui.myCircle.MyCircleFragment;
 import com.example.familyconnectionapp.ui.myLocation.LocationSettingsFragment;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
+import com.example.familyconnectionapp.FirebaseOperation;
+import com.google.firebase.auth.FirebaseAuth;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.fragment.app.Fragment;
@@ -27,11 +28,17 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
 import android.widget.FrameLayout;
+import android.widget.TextView;
+
+import java.util.ArrayList;
 
 public class MenuActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
     private FragmentManager fragmentManager;
+    private FirebaseOperation firebaseOperation;
+    private FirebaseAuth mAuth;
+    private UserModel currUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,13 +54,33 @@ public class MenuActivity extends AppCompatActivity {
         fragmentManager.beginTransaction().add(R.id.nav_host_fragment, locationSettingsFragment, "nav_host_fragment").commit();
 
 
-        FloatingActionButton fab = findViewById(R.id.fabMessage);
-        fab.setOnClickListener(view -> {
-//            ChatFragment chatFragment = new ChatFragment();
-//            fragmentManager = getSupportFragmentManager();
-//            fragmentManager.beginTransaction().replace(R.id.nav_host_fragment, chatFragment, "nav_host_fragment").commit();
+        FloatingActionButton fabMessage = findViewById(R.id.fabMessage);
+        FloatingActionButton fabSOS = findViewById(R.id.fabSOS);
+
+        fabMessage.setOnClickListener(view -> {
               Intent intent = new Intent(this, ChatActivity.class);
               startActivity(intent);
+        });
+
+        mAuth = FirebaseAuth.getInstance();
+        firebaseOperation = new FirebaseOperation();
+        firebaseOperation.getUserById(mAuth.getCurrentUser().getUid(), u -> {
+            currUser = u;
+            TextView emailUser = findViewById(R.id.emailUser);
+            TextView nameUser = findViewById(R.id.nameUser);
+            emailUser.setText(currUser.email);
+            nameUser.setText(currUser.name);
+        });
+
+        fabSOS.setOnClickListener(view -> {
+            currUser.SOS = true;
+            ArrayList<CircleModel> joinedCircleList =  new ArrayList<>(currUser.JoinedCircleList.values());
+
+            for(CircleModel circle : joinedCircleList){
+                firebaseOperation.getUserByCircleCode(circle.circleCode, user -> {
+                   firebaseOperation.setSOS(user.userId, currUser.userId, currUser.SOS);
+                });
+            }
         });
 
         final DrawerLayout drawerLayout = findViewById(R.id.drawer_layout);

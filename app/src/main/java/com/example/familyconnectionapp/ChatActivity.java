@@ -29,7 +29,6 @@ public class ChatActivity extends AppCompatActivity {
         TextView msgInput = findViewById(R.id.msg_input);
 
         showAllOldMessages();
-        hideKeyboard(this);
 
         btnSend.setOnClickListener(view -> {
             if (msgInput.getText().toString().trim().equals("")) {
@@ -58,16 +57,8 @@ public class ChatActivity extends AppCompatActivity {
         listView = findViewById(R.id.list_msg);
 
         adapter = new MessageAdapter(this, ChatModel.class, R.layout.fragment_chat,
-                FirebaseDatabase.getInstance().getReference());
+                FirebaseDatabase.getInstance().getReference().child("Messages"));
         listView.setAdapter(adapter);
-    }
-
-    private void hideKeyboard(Activity activity) {
-        View view = this.getCurrentFocus();
-        if (view != null) {
-            InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
-            imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
-        }
     }
 
     public String getLoggedInUserName () {

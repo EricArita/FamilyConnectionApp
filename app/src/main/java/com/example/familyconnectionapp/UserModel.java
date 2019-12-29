@@ -11,6 +11,7 @@ public class UserModel {
     public String date;
     public String circleCode;
     public Boolean isSharing;
+    public Boolean SOS;
     public Double lat;
     public Double lng;
     public  Map<String, UserViewModel> CircleMembers;
@@ -21,6 +22,7 @@ public class UserModel {
         // Default constructor required for calls to DataSnapshot.getValue(User.class)
         CircleMembers = new HashMap<>();
         JoinedCircleList = new HashMap<>();
+        SOS = false;
     }
 
     public UserModel( String userId, String name, String email, String password, String date, String circleCode, Boolean isSharing, Double lat, Double lng) {
@@ -35,5 +37,6 @@ public class UserModel {
         this.lng = lng;
         CircleMembers = new HashMap<>();
         JoinedCircleList = new HashMap<>();
+        SOS = false;
     }
 }

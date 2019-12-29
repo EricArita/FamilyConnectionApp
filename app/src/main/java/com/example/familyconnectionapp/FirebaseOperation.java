@@ -98,6 +98,14 @@ public class FirebaseOperation {
         }
     }
 
+    public void setSOS(String userId, String memberId, boolean SOS){
+        try {
+            dbReference.child(userId).child("CircleMembers").child(memberId).child("SOS").setValue(SOS);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
     public void setShareLocation(String userId, boolean allowShareLocation){
         try {
             dbReference.child(userId).child("isSharing").setValue(allowShareLocation);
@@ -108,7 +116,7 @@ public class FirebaseOperation {
 
     public void updateCircleMemebers(UserModel updatedUser, UserModel currentUser){
         try {
-            UserViewModel currUser = new UserViewModel(currentUser.userId, currentUser.name, currentUser.isSharing, currentUser.lng, currentUser.lat);
+            UserViewModel currUser = new UserViewModel(currentUser.userId, currentUser.name, currentUser.isSharing, currentUser.SOS,currentUser.lng, currentUser.lat);
             dbReference.child(updatedUser.userId).child("CircleMembers").child(currUser.userId).setValue(currUser);
             dbReference.child(currentUser.userId).child("JoinedCircleList").child(updatedUser.userId).child("circleCode").setValue(updatedUser.circleCode);
         } catch (Exception e) {

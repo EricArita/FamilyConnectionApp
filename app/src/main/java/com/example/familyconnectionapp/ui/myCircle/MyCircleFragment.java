@@ -18,10 +18,10 @@ import androidx.fragment.app.Fragment;
 
 import com.example.familyconnectionapp.AdapterUser;
 import com.example.familyconnectionapp.FirebaseOperation;
+import com.google.firebase.auth.FirebaseAuth;
 import com.example.familyconnectionapp.MapActivity;
 import com.example.familyconnectionapp.R;
 import com.example.familyconnectionapp.UserViewModel;
-import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.ArrayList;
 
@@ -52,6 +52,12 @@ public class MyCircleFragment extends Fragment {
 
             for(UserViewModel member : usersArrayList){
                 firebaseOperation.getUserById(member.userId, user -> {
+                    if (user.SOS != member.SOS){
+                        member.SOS = user.SOS;
+                        usersArrayList.set(usersArrayList.indexOf(member), member);
+                        firebaseOperation.setSOS(currentUserId, member.userId, user.SOS);
+                    }
+
                     if (user.isSharing != member.isSharing){
                         member.isSharing = user.isSharing;
                         usersArrayList.set(usersArrayList.indexOf(member), member);
